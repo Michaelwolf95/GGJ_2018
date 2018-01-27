@@ -4,9 +4,9 @@ namespace GGJ_2018.ContagionSystem
 {
     public class ContactInfector : InfectorBase
     {
-        public void OnCollisionEnter(Collider other)
+        public void OnCollisionEnter(Collision col)
         {
-            var go = other.attachedRigidbody ? other.attachedRigidbody.gameObject : other.gameObject;
+            var go = col.collider.attachedRigidbody ? col.collider.attachedRigidbody.gameObject : col.collider.gameObject;
             TryInfect(go);
         }
     }
