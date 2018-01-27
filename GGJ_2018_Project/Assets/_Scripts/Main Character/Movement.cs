@@ -15,7 +15,7 @@ public class Movement : MonoBehaviour {
 	void Start () {
 		rigidbody = GetComponent<Rigidbody2D>();
 		rigidbody.gravityScale = 0;
-		rigidbody.drag = force/10f;
+		rigidbody.drag = force;
 
 		movement = new Vector2(0, 0);
 	}
@@ -26,13 +26,21 @@ public class Movement : MonoBehaviour {
 		y = Input.GetAxis("Vertical");
 
 		movement.Set(x, y);
+	}
+
+	void FixedUpdate() {
+		if (movement.magnitude == 0) {
+			rigidbody.drag = force;
+		} else {
+			rigidbody.drag = 0;
+		}
 
 		rigidbody.AddForce(movement * force);
 		rigidbody.velocity = Vector2.ClampMagnitude(rigidbody.velocity, maxVelocity);
+		print(rigidbody.velocity.magnitude);
 	}
 
 	public Vector2 getMove() {
-		print("movement");
 		return movement;
 	}
 }

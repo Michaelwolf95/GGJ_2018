@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(SpriteRenderer))]
 
-public class FDAnimation : MonoBehaviour, IAnimation {
+public class FDAnimation : MonoBehaviour {
 	Animator anim;
 
 	// Use this for initialization
@@ -22,5 +22,9 @@ public class FDAnimation : MonoBehaviour, IAnimation {
 	public void SetAnimationDirection(Vector2 moveDirection) {
 		anim.SetFloat("x", moveDirection.x);
 		anim.SetFloat("y", moveDirection.y);
+	}
+
+	public void SetAnimationSpeed(float speed) {
+		anim.SetFloat("speed", speed);
 	}
 }
