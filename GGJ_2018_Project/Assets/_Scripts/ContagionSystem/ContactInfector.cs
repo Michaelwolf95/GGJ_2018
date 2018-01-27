@@ -1,6 +1,6 @@
-﻿namespace a
+﻿namespace GGJ_2018.ContagionSystem
 {
-    public class a
+    public class ContactInfector : InfectorBase
     {
         
     }

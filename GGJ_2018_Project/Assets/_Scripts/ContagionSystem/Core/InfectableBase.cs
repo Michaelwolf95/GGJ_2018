@@ -5,10 +5,12 @@ namespace GGJ_2018.ContagionSystem
 {
     public struct InfectionEventArgs
     {
+        public GameObject InfectionPrefab;
         public TransmissionMediumType TransmissionMedium;
 
-        public InfectionEventArgs(TransmissionMediumType mediumType)
+        public InfectionEventArgs(GameObject infectionPrefab, TransmissionMediumType mediumType = TransmissionMediumType.Default)
         {
+            InfectionPrefab = infectionPrefab;
             TransmissionMedium = mediumType;
         }
     }
@@ -23,7 +25,7 @@ namespace GGJ_2018.ContagionSystem
 
     public delegate void InfectionEventHandler(object sender, InfectionEventArgs args);
 
-    public class InfectableBase : MonoBehaviour
+    public abstract class InfectableBase : MonoBehaviour
     {
         [SerializeField] protected TransmissionMediumType[] m_MediumImmunities;
 
