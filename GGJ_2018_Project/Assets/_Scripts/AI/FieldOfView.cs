@@ -39,8 +39,6 @@ public class FieldOfView : MonoBehaviour
             Transform target = targetsInViewRadius[i].transform;
             Vector2 dirToTarget = (target.position - transform.position).normalized;
 
-
-
             if (Vector2.Angle(transform.up, dirToTarget) < viewAngle / 2)
             {
                 float dstToTarget = Vector2.Distance(transform.position, target.position);
@@ -59,6 +57,34 @@ public class FieldOfView : MonoBehaviour
         SetClosestTarget();
     }
 
+
+    public Transform[] GetVisibleTargets()
+    {
+        List<Transform> visTargets = new List<Transform>();
+        visTargets.Clear();
+        Collider2D[] targetsInViewRadius = Physics2D.OverlapCircleAll(transform.position, viewRadius, targetMask);
+
+        for (int i = 0; i < targetsInViewRadius.Length; i++)
+        {
+            Transform target = targetsInViewRadius[i].attachedRigidbody? targetsInViewRadius[i].attachedRigidbody.transform : targetsInViewRadius[i].transform;
+            Vector2 dirToTarget = (target.position - transform.position).normalized;
+            Debug.DrawLine(target.position, transform.position, Color.red);
+            if (Vector2.Angle(transform.up, dirToTarget) < viewAngle / 2)
+            {
+                float dstToTarget = Vector2.Distance(transform.position, target.position);
+
+                // Check for obstacles between objects in view radius
+                RaycastHit2D hit2d = Physics2D.Raycast(transform.position, dirToTarget, dstToTarget, obstacleMask);
+                if (hit2d.collider == null)
+                {
+                    visTargets.Add(target);
+                }
+            }
+        }
+
+        return visTargets.ToArray();
+    }
+
     void SetClosestTarget()
     {
         Transform target = null;
@@ -74,8 +100,8 @@ public class FieldOfView : MonoBehaviour
                 target = trans;
             }
         }
-
-        GetComponentInParent<MoveToTarget>().setTarget(target);
+        var mtt = GetComponentInParent<MoveToTarget>();
+        if(mtt) mtt.setTarget(target);
     }
 
 

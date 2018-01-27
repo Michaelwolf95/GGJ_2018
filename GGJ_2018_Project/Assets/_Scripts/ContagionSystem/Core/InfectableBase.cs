@@ -39,6 +39,11 @@ namespace GGJ_2018.ContagionSystem
             get { return m_MediumImmunities; }
         }
 
+        public bool IsInfected
+        {
+            get { return (InfectionDict.Count > 0);}
+        }
+
         public event InfectionEventHandler OnInfect;
 
         protected virtual void Start()
