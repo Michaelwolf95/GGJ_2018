@@ -8,14 +8,14 @@ public class Movement : MonoBehaviour {
 
 	Rigidbody2D rigidbody;
 	float x, y;
-	public float force = 10, maxVelocity = 1;
+	public float force = 50, maxVelocity = 3;
 	Vector2 movement;
 
 	// Use this for initialization
 	void Start () {
 		rigidbody = GetComponent<Rigidbody2D>();
 		rigidbody.gravityScale = 0;
-		rigidbody.drag = force;
+		rigidbody.drag = force/10f;
 
 		movement = new Vector2(0, 0);
 	}
