@@ -10,8 +10,10 @@ namespace GGJ_2018.ContagionSystem
         public void TryInfect(GameObject target)
         {
             InfectableBase inf = target.GetComponent<InfectableBase>();
+            //Debug.Log("Infecting..");
             if (inf != null)
             {
+                //Debug.Log("Infecting!");
                 inf.Infect(this, new InfectionEventArgs(InfectionPrefab, TransmissionMedium));
             }
         }

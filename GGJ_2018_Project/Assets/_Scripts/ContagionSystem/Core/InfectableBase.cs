@@ -32,6 +32,8 @@ namespace GGJ_2018.ContagionSystem
 
         [SerializeField] protected List<InfectionBase> Infections;
 
+        public Dictionary<string, InfectionBase> InfectionDict = new Dictionary<string, InfectionBase>();
+
         public TransmissionMediumType[] MediumImmunities
         {
             get { return m_MediumImmunities; }
@@ -39,18 +41,35 @@ namespace GGJ_2018.ContagionSystem
 
         public event InfectionEventHandler OnInfect;
 
+        protected virtual void Start()
+        {
+            foreach (var inf in Infections)
+            {
+                inf.Infect(this);
+                InfectionDict.Add(inf.InfectionName, inf);
+            }
+        }
+
         public virtual bool Infect(object sender, InfectionEventArgs args)
         {
             // This should be made more complex in the future.
             if (!(new List<TransmissionMediumType>(m_MediumImmunities)).Contains(args.TransmissionMedium))
             {
-                var go = GameObject.Instantiate(args.InfectionPrefab, this.transform.position, this.transform.rotation, this.transform);
-                var inf = go.GetComponent<InfectionBase>();
-                if (inf)
+                var infPrefab = args.InfectionPrefab.GetComponent<InfectionBase>();
+                if (infPrefab)
                 {
-                    inf.Infect(this);
+                    if (InfectionDict.ContainsKey(infPrefab.InfectionName))
+                        return false;
+                    var go = GameObject.Instantiate(args.InfectionPrefab, this.transform.position, this.transform.rotation, this.transform);
+                    var inf = go.GetComponent<InfectionBase>();
+                    if (inf)
+                    {
+                        inf.Infect(this);
+                        this.Infections.Add(inf);
+                        this.InfectionDict.Add(inf.InfectionName, inf);
+                    }
+                    return true;
                 }
-                return true;
             }
             return false;
         }
@@ -61,7 +80,8 @@ namespace GGJ_2018.ContagionSystem
             {
                 infection.Cure();
                 Infections.Remove(infection);
-                //Destroy(infection.gameObject);
+                this.InfectionDict.Remove(infection.InfectionName);
+                Destroy(infection.gameObject);
             }
         }
 
@@ -72,6 +92,8 @@ namespace GGJ_2018.ContagionSystem
             {
                 inf.Cure();
                 Infections.Remove(inf);
+                this.InfectionDict.Remove(inf.InfectionName);
+                Destroy(inf.gameObject);
             }
         }
 
