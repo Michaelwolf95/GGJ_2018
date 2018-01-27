@@ -7,6 +7,6 @@ namespace GGJ_2018.ContagionSystem
         [SerializeField] private string m_InfectionName;
         public string InfectionName { get { return m_InfectionName;} }
 
-        public IInfectable Host;
+        //public Infectable Host;
     }
 }
