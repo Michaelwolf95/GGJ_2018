@@ -39,7 +39,6 @@ public class Movement : MonoBehaviour {
 		//rigidbody.velocity = Vector2.ClampMagnitude(rigidbody.velocity, maxVelocity);
 
 		anim.SetAnimationDirection(movement);
-		anim.SetAnimationSpeed(Mathf.Abs(movement.magnitude));
 
 		rigidbody.MovePosition(rigidbody.position + movement * maxVelocity * Time.fixedDeltaTime);
 	}

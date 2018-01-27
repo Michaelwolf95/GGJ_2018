@@ -23,8 +23,4 @@ public class FDAnimation : MonoBehaviour {
 		anim.SetFloat("x", moveDirection.x);
 		anim.SetFloat("y", moveDirection.y);
 	}
-
-	public void SetAnimationSpeed(float speed) {
-		anim.SetFloat("speed", speed);
-	}
 }
