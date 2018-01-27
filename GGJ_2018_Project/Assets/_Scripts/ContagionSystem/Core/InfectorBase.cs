@@ -4,6 +4,15 @@ namespace GGJ_2018.ContagionSystem
 {
     public class InfectorBase : MonoBehaviour
     {
-        //public void TryInfect()
+        public TransmissionMediumType TransmissionMedium;
+
+        public void TryInfect(GameObject target)
+        {
+            InfectableBase inf = target.GetComponent<InfectableBase>();
+            if (inf != null)
+            {
+                inf.Infect(this, new InfectionEventArgs(TransmissionMedium));
+            }
+        }
     }
 }

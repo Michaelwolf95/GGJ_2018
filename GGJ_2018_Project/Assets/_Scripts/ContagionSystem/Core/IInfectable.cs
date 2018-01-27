@@ -4,25 +4,30 @@ using UnityEngine;
 
 namespace GGJ_2018.ContagionSystem
 {
-    public struct InfectionEventArgs
-    {
-        public TransmissionMediumType TransmissionMedium;
-    }
+    //public struct InfectionEventArgs
+    //{
+    //    public TransmissionMediumType TransmissionMedium;
 
-    public enum TransmissionMediumType
-    {
-        Default,
-        Contact,
-        Airborn,
-        Fluid
-    }
+    //    public InfectionEventArgs(TransmissionMediumType mediumType)
+    //    {
+    //        TransmissionMedium = mediumType;
+    //    }
+    //}
 
-    public delegate void InfectionEventHandler(object sender, InfectionEventArgs args);
+    //public enum TransmissionMediumType
+    //{
+    //    Default,
+    //    Contact,
+    //    Airborn,
+    //    Fluid
+    //}
 
-    public interface IInfectable
-    {
-        TransmissionMediumType[] MediumImmunities { get; }
-        bool Infect(object sender, InfectionEventArgs args);
-        event InfectionEventHandler OnInfect;
-    }
+    //public delegate void InfectionEventHandler(object sender, InfectionEventArgs args);
+
+    //public interface IInfectable
+    //{
+    //    TransmissionMediumType[] MediumImmunities { get; }
+    //    bool Infect(object sender, InfectionEventArgs args);
+    //    event InfectionEventHandler OnInfect;
+    //}
 }
