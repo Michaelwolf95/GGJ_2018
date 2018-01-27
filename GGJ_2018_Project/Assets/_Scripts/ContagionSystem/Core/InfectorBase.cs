@@ -2,8 +2,9 @@
 
 namespace GGJ_2018.ContagionSystem
 {
-    public class InfectorBase : MonoBehaviour
+    public abstract class InfectorBase : MonoBehaviour
     {
+        public GameObject InfectionPrefab;
         public TransmissionMediumType TransmissionMedium;
 
         public void TryInfect(GameObject target)
@@ -11,7 +12,7 @@ namespace GGJ_2018.ContagionSystem
             InfectableBase inf = target.GetComponent<InfectableBase>();
             if (inf != null)
             {
-                inf.Infect(this, new InfectionEventArgs(TransmissionMedium));
+                inf.Infect(this, new InfectionEventArgs(InfectionPrefab, TransmissionMedium));
             }
         }
     }
