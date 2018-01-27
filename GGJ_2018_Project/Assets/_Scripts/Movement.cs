@@ -30,4 +30,9 @@ public class Movement : MonoBehaviour {
 		rigidbody.AddForce(movement * force);
 		rigidbody.velocity = Vector2.ClampMagnitude(rigidbody.velocity, maxVelocity);
 	}
+
+	public Vector2 getMove() {
+		print("movement");
+		return movement;
+	}
 }
