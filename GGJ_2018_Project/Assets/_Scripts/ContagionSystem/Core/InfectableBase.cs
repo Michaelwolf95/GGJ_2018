@@ -11,7 +11,7 @@ namespace GGJ_2018.ContagionSystem
             get { return m_MediumImmunities; }
         }
 
-        public virtual bool TryInfect(object sender, InfectionEventArgs args)
+        public virtual bool Infect(object sender, InfectionEventArgs args)
         {
             if (!(new List<TransmissionMediumType>(m_MediumImmunities)).Contains(args.TransmissionMedium))
             {

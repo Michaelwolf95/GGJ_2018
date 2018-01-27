@@ -22,7 +22,7 @@ namespace GGJ_2018.ContagionSystem
     public interface IInfectable
     {
         TransmissionMediumType[] MediumImmunities { get; }
-        bool TryInfect(object sender, InfectionEventArgs args);
+        bool Infect(object sender, InfectionEventArgs args);
         event InfectionEventHandler OnInfect;
     }
 }
