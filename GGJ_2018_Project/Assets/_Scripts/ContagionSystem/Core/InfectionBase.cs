@@ -10,8 +10,8 @@ namespace GGJ_2018.ContagionSystem
 
         public InfectableBase Host { get; protected set; }
 
-        public Action OnInfect = delegate { };
-        public Action OnCure = delegate { };
+        public Action<InfectableBase> OnInfect = delegate { };
+        public Action<InfectableBase> OnCure = delegate { };
 
         public virtual void Infect(InfectableBase host)
         {
@@ -22,7 +22,7 @@ namespace GGJ_2018.ContagionSystem
             }
 
             Host = host;
-            OnInfect();
+            OnInfect(Host);
         }
 
 
@@ -33,8 +33,8 @@ namespace GGJ_2018.ContagionSystem
                 return;
             }
 
+            OnCure(Host);
             Host = null;
-            OnCure();
 
             //Destroy(this.gameObject);
         }
