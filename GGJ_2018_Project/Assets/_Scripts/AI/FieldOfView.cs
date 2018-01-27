@@ -4,7 +4,6 @@ using System.Collections.Generic;
 
 public class FieldOfView : MonoBehaviour
 {
-
     public float viewRadius;
     [Range(0, 360)]
     public float viewAngle;
@@ -45,10 +44,10 @@ public class FieldOfView : MonoBehaviour
             if (Vector2.Angle(transform.up, dirToTarget) < viewAngle / 2)
             {
                 float dstToTarget = Vector2.Distance(transform.position, target.position);
-                visibleTargets.Add(target);
+
                 // Check for obstacles between objects in view radius
                 RaycastHit2D hit2d = Physics2D.Raycast(transform.position, dirToTarget, dstToTarget, obstacleMask);
-                if (hit2d)
+                if (hit2d.collider == null)
                 {
                     visibleTargets.Add(target);
                 }
@@ -76,10 +75,7 @@ public class FieldOfView : MonoBehaviour
             }
         }
 
-        if (target != null)
-        {
-            GetComponentInParent<MoveToTarget>().setTarget(target);
-        }
+        GetComponentInParent<MoveToTarget>().setTarget(target);
     }
 
 
