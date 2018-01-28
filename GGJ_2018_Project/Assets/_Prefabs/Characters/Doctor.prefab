@@ -263,8 +263,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1299409394426730}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.01, y: 0.256, z: 0}
-  m_LocalScale: {x: 0.579004, y: 0.4299938, z: 1}
+  m_LocalPosition: {x: -0.01, y: 0.25, z: 0}
+  m_LocalScale: {x: 0.41254058, y: 0.27412108, z: 1}
   m_Children:
   - {fileID: 4063853633415306}
   m_Father: {fileID: 4147507940315994}
@@ -319,7 +319,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1947391842973250}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.77, y: 2.15, z: 0}
+  m_LocalPosition: {x: -15.91, y: 9.13, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4147507940315994}
@@ -659,7 +659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad705bba33f3642f4bc26cd844e12c6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 5.2
   angularSpeed: 720
   acceleration: 32
   stoppingDistance: 0.5
@@ -1324,7 +1324,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 490f117dad6d7524e9390597a2de7fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PathNodes: []
+  PathNodes:
+  - {fileID: 4345867396157842}
+  - {fileID: 4352812595968520}
+  - {fileID: 4640992810753518}
   CurrentNodeIndex: 0
   IsCircular: 0
 --- !u!212 &212422280618907670
