@@ -51,6 +51,12 @@ namespace GGJ_2018_AP
             SceneManager.LoadScene(nextSceneLevel, LoadSceneMode.Single);
         }
 
+        public void QuitGame()
+        {
+            Debug.Log("Quit");
+            Application.Quit();
+        }
+
         private void ScanForKeyStroke()
         {
             if (Input.GetKeyDown("escape") && gamePaused == false)
