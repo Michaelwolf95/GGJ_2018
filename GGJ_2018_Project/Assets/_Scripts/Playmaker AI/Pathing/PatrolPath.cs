@@ -13,6 +13,10 @@ namespace WellTold.AI.Playmaker.Pathing
 
         public Transform GetNextNode()
         {
+            if (PathNodes.Length == 1)
+            {
+                return PathNodes[0];
+            }
             if (CurrentNodeIndex + direction > (PathNodes.Length-1)) // Direction is positive, reached end.
             {
                 if (IsCircular)

@@ -41,7 +41,7 @@ public class FieldOfView : MonoBehaviour
         List<Transform> visTargets = new List<Transform>();
         visTargets.Clear();
         Collider2D[] targetsInViewRadius = Physics2D.OverlapCircleAll(transform.position, viewRadius, targetMask);
-
+        //Debug.Log("Found Count: " + targetsInViewRadius.Length);
         for (int i = 0; i < targetsInViewRadius.Length; i++)
         {
             Transform target = targetsInViewRadius[i].attachedRigidbody ? targetsInViewRadius[i].attachedRigidbody.transform : targetsInViewRadius[i].transform;
@@ -49,14 +49,20 @@ public class FieldOfView : MonoBehaviour
 
             if (Vector2.Angle(transform.up, dirToTarget) < viewAngle / 2)
             {
+                //Debug.Log("Found in Angle!");
                 float dstToTarget = Vector2.Distance(transform.position, target.position);
 
                 // Check for obstacles between objects in view radius
                 RaycastHit2D hit2d = Physics2D.Raycast(transform.position, dirToTarget, dstToTarget, obstacleMask);
                 if (hit2d.collider == null)
                 {
+                    //Debug.Log("Detected " + target.name);
                     visTargets.Add(target);
                 }
+                //else
+                //{
+                //    Debug.Log("Hit " + hit2d.collider.name);
+                //}
             }
         }
 
@@ -89,7 +95,7 @@ public class FieldOfView : MonoBehaviour
     {
         int stepCount = Mathf.RoundToInt(viewAngle * meshResolution);
         float stepAngleSize = viewAngle / stepCount;
-        List<Vector3> viewPoints = new List<Vector3>();
+        List<Vector2> viewPoints = new List<Vector2>();
         ViewCastInfo oldViewCast = new ViewCastInfo();
         for (int i = 0; i <= stepCount; i++)
         {
@@ -102,11 +108,11 @@ public class FieldOfView : MonoBehaviour
                 if (oldViewCast.hit != newViewCast.hit || (oldViewCast.hit && newViewCast.hit && edgeDstThresholdExceeded))
                 {
                     EdgeInfo edge = FindEdge(oldViewCast, newViewCast);
-                    if (edge.pointA != Vector3.zero)
+                    if (edge.pointA != Vector2.zero)
                     {
                         viewPoints.Add(edge.pointA);
                     }
-                    if (edge.pointB != Vector3.zero)
+                    if (edge.pointB != Vector2.zero)
                     {
                         viewPoints.Add(edge.pointB);
                     }
@@ -174,9 +180,9 @@ public class FieldOfView : MonoBehaviour
     ViewCastInfo ViewCast(float globalAngle)
     {
         Vector3 dir = DirFromAngle(globalAngle, false);
-        RaycastHit hit;
+        RaycastHit2D hit;
 
-        if (Physics.Raycast(transform.position, dir, out hit, viewRadius, obstacleMask))
+        if (hit = Physics2D.Raycast(transform.position, dir, viewRadius, obstacleMask))
         {
             return new ViewCastInfo(true, hit.point, hit.distance, globalAngle);
         }
@@ -189,11 +195,11 @@ public class FieldOfView : MonoBehaviour
     public struct ViewCastInfo
     {
         public bool hit;
-        public Vector3 point;
+        public Vector2 point;
         public float dst;
         public float angle;
 
-        public ViewCastInfo(bool _hit, Vector3 _point, float _dst, float _angle)
+        public ViewCastInfo(bool _hit, Vector2 _point, float _dst, float _angle)
         {
             hit = _hit;
             point = _point;
@@ -204,10 +210,10 @@ public class FieldOfView : MonoBehaviour
 
     public struct EdgeInfo
     {
-        public Vector3 pointA;
-        public Vector3 pointB;
+        public Vector2 pointA;
+        public Vector2 pointB;
 
-        public EdgeInfo(Vector3 _pointA, Vector3 _pointB)
+        public EdgeInfo(Vector2 _pointA, Vector2 _pointB)
         {
             pointA = _pointA;
             pointB = _pointB;

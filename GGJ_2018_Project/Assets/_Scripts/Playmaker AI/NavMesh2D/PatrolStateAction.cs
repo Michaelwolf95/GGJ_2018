@@ -15,21 +15,30 @@ namespace GGJ_2018.PlayMaker.NavMesh2D
 
         private Timer _waitTimer = new Timer(0.5f);
 
+        public override void Reset()
+        {
+            base.Reset();
+            PatrolPathGameObject = null;
+        }
+
         public override void OnEnter()
         {
+            base.OnEnter();
             _waitTimer = new Timer(WaitTime.Value);
             if (UsePath)
             {
-                if (PatrolPathGameObject.Value == null)
+                //if(PatrolPathGameObject.Value)
+                if (PatrolPathGameObject == null)
                 {
                     Finish();
                     return;
                 }
 
                 _path = PatrolPathGameObject.Value.GetComponent<PatrolPath>();
+
+                
             }
 
-            base.OnEnter();
         }
 
         public override void OnUpdate()
@@ -60,11 +69,14 @@ namespace GGJ_2018.PlayMaker.NavMesh2D
 
         protected void FindNextPathPosition()
         {
-            if(_path.PathNodes.Length <=1) return;
+            if (_path.PathNodes.Length == 0)
+            {
+                _path.PathNodes = new Transform[] { _path.transform };
+            }
+
             //Debug.Log("Next Position");
             Vector3 newPos = _path.GetNextNode().position;
             navMeshAgent.SetDestination(newPos);
-            
         }
     }
 }
