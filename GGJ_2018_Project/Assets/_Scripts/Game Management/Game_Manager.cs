@@ -50,6 +50,7 @@ namespace GGJ_2018
 
         public void UnPauseGame(GameObject pauseMenu)
         {
+            gamePaused = false;
             pauseMenu.SetActive(false);
         }
 
