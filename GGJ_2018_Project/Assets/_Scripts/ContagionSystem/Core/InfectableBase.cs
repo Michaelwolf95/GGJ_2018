@@ -32,6 +32,8 @@ namespace GGJ_2018.ContagionSystem
 
         [SerializeField] protected List<InfectionBase> Infections;
 
+        [SerializeField] protected bool m_InitInfectionsAtStart = true;
+
         public Dictionary<string, InfectionBase> InfectionDict = new Dictionary<string, InfectionBase>();
 
         public TransmissionMediumType[] MediumImmunities
@@ -39,14 +41,22 @@ namespace GGJ_2018.ContagionSystem
             get { return m_MediumImmunities; }
         }
 
+        public bool IsInfected
+        {
+            get { return (InfectionDict.Count > 0);}
+        }
+
         public event InfectionEventHandler OnInfect;
 
         protected virtual void Start()
         {
-            foreach (var inf in Infections)
+            if(m_InitInfectionsAtStart)
             {
-                inf.Infect(this);
-                InfectionDict.Add(inf.InfectionName, inf);
+                foreach (var inf in Infections)
+                {
+                    inf.Infect(this);
+                    InfectionDict.Add(inf.InfectionName, inf);
+                }
             }
         }
 
