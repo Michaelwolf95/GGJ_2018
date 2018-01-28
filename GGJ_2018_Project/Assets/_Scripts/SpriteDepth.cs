@@ -15,6 +15,7 @@ public class SpriteDepth : MonoBehaviour
     {
         if (_sr)
         {
+            //float ypos = _sr.bounds.
             if (this.transform.position.y <= -100f)
             {
                 _sr.sortingOrder = -200;
