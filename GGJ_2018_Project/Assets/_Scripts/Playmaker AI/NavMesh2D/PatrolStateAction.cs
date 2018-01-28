@@ -8,6 +8,7 @@ namespace GGJ_2018.PlayMaker.NavMesh2D
     public class PatrolStateAction : NavMeshAgent2DStateAction
     {
         public FsmGameObject PatrolPathGameObject;
+        public FsmFloat WaitTime = 0.5f;
 
         private PatrolPath _path;
         public bool UsePath = true;
@@ -16,6 +17,7 @@ namespace GGJ_2018.PlayMaker.NavMesh2D
 
         public override void OnEnter()
         {
+            _waitTimer = new Timer(WaitTime.Value);
             if (UsePath)
             {
                 if (PatrolPathGameObject.Value == null)
