@@ -668,7 +668,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 303068621}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1690965245}
+        m_MethodName: EnterOptions
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &303068621
@@ -2161,7 +2172,7 @@ MonoBehaviour:
         actionEnabled: 01
         actionIsOpen: 01
         actionStartIndex: 00000000
-        actionHashCodes: e7585201
+        actionHashCodes: a2518504
         unityObjectParams:
         - {fileID: 1120960158}
         fsmGameObjectParams: []
@@ -2194,18 +2205,21 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams: []
-        byteData: 01
+        byteData: 01000000000000000000
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 050000000100000014000000
+        paramDataType: 050000000100000014000000010000000200000002000000
         paramName:
         - Path
         - UsePath
-        - gameObject
-        paramDataPos: 000000000000000000000000
-        paramByteDataSize: 000000000100000000000000
+        - agentGameObject
+        - OverrideAgentVariables
+        - AgentSpeed
+        - AgentAcceleration
+        paramDataPos: 000000000000000000000000010000000200000006000000
+        paramByteDataSize: 000000000100000000000000010000000400000004000000
     events:
     - name: FINISHED
       isSystemEvent: 1
@@ -5277,7 +5291,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2008449669}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1690965245}
+        m_MethodName: LoadNextScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2008449669
@@ -5580,7 +5605,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2119544081}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1690965245}
+        m_MethodName: LoadNextScene
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2119544081
