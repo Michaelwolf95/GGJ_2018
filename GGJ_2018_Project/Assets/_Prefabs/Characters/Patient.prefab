@@ -237,7 +237,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.6391709, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &114081310908353090
 MonoBehaviour:
@@ -365,12 +365,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {fileID: 0}
-        - useVariable: 0
-          name: 
+        - useVariable: 1
+          name: PatrolPath
           tooltip: 
-          showInInspector: 0
+          showInInspector: 1
           networkSync: 0
-          value: {fileID: 0}
+          value: {fileID: 1903711042712134}
         fsmOwnerDefaultParams:
         - ownerOption: 0
           gameObject:

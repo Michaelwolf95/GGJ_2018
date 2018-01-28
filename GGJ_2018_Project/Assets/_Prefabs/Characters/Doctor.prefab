@@ -236,7 +236,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1947391842973250}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.74, y: 2.54, z: 0}
+  m_LocalPosition: {x: 4.74, y: 1.84, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4147507940315994}
@@ -279,7 +279,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1660631044415428}
   m_LocalRotation: {x: -0, y: -0, z: 0.69920605, w: 0.7149203}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.02, y: 1.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4605725738167456}
@@ -337,7 +337,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.008814812, y: 0.052888393}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.6151906, y: 0.013513514}
@@ -348,7 +348,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.80607605, y: 0.8942232}
   m_EdgeRadius: 0
 --- !u!61 &61781586892518822
 BoxCollider2D:
@@ -441,7 +441,7 @@ MonoBehaviour:
     m_Bits: 768
   obstacleMask:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 1025
   visibleTargets: []
 --- !u!114 &114748299383283466
 MonoBehaviour:
@@ -577,12 +577,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {fileID: 0}
-        - useVariable: 0
-          name: 
+        - useVariable: 1
+          name: PatrolPath
           tooltip: 
-          showInInspector: 0
+          showInInspector: 1
           networkSync: 0
-          value: {fileID: 0}
+          value: {fileID: 1338623484845292}
         fsmOwnerDefaultParams:
         - ownerOption: 0
           gameObject:
@@ -649,7 +649,7 @@ MonoBehaviour:
           name: OnReachTarget
           isSystemEvent: 0
           isGlobal: 0
-        toState: Patrol 2
+        toState: Attack
         linkStyle: 0
         linkConstraint: 0
         colorIndex: 0
@@ -769,7 +769,7 @@ MonoBehaviour:
         - everyFrame
         paramDataPos: 0000000000000000000000000100000005000000010000000100000000000000090000000100000002000000030000000000000001000000020000000a000000
         paramByteDataSize: 00000000000000000100000004000000040000000000000000000000000000000100000000000000000000000000000000000000000000000000000001000000
-    - name: Patrol 2
+    - name: Attack
       description: 
       colorIndex: 0
       position:

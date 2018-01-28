@@ -239,18 +239,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 1947391842973250, guid: 7e3242aad8298114cab98f843f208d17, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4934741041053732, guid: 7e3242aad8298114cab98f843f208d17, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 4934741041053732, guid: 7e3242aad8298114cab98f843f208d17, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0.02
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7e3242aad8298114cab98f843f208d17, type: 2}
   m_IsPrefabParent: 0
@@ -1475,11 +1463,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 728907092}
---- !u!1 &827519434 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1903711042712134, guid: 4a64bc5ed265e9a4a8a9797e5f814e30,
-    type: 2}
-  m_PrefabInternal: {fileID: 1913267185}
 --- !u!1 &836073900
 GameObject:
   m_ObjectHideFlags: 0
@@ -1626,12 +1609,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 902714279}
---- !u!114 &936544432 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114930375685722236, guid: 7e3242aad8298114cab98f843f208d17,
-    type: 2}
-  m_PrefabInternal: {fileID: 152858147}
-  m_Script: {fileID: 11500000, guid: 490f117dad6d7524e9390597a2de7fb5, type: 3}
 --- !u!1 &951001689
 GameObject:
   m_ObjectHideFlags: 0
@@ -2641,71 +2618,6 @@ Prefab:
     - target: {fileID: 4984034594543820, guid: d377d66b3ac1dad489b3a8c1d758e255, type: 2}
       propertyPath: m_RootOrder
       value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4968799945897874, guid: d377d66b3ac1dad489b3a8c1d758e255, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 2.5594258
-      objectReference: {fileID: 0}
-    - target: {fileID: 4968799945897874, guid: d377d66b3ac1dad489b3a8c1d758e255, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 2.5594263
-      objectReference: {fileID: 0}
-    - target: {fileID: 4968799945897874, guid: d377d66b3ac1dad489b3a8c1d758e255, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 2.5594263
-      objectReference: {fileID: 0}
-    - target: {fileID: 4968799945897874, guid: d377d66b3ac1dad489b3a8c1d758e255, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.02
-      objectReference: {fileID: 0}
-    - target: {fileID: 61671602578698902, guid: d377d66b3ac1dad489b3a8c1d758e255,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: 0.21311752
-      objectReference: {fileID: 0}
-    - target: {fileID: 61671602578698902, guid: d377d66b3ac1dad489b3a8c1d758e255,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 0.46812096
-      objectReference: {fileID: 0}
-    - target: {fileID: 61671602578698902, guid: d377d66b3ac1dad489b3a8c1d758e255,
-        type: 2}
-      propertyPath: m_Offset.x
-      value: 0.03748402
-      objectReference: {fileID: 0}
-    - target: {fileID: 61671602578698902, guid: d377d66b3ac1dad489b3a8c1d758e255,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 0.42503196
-      objectReference: {fileID: 0}
-    - target: {fileID: 4872879270495748, guid: d377d66b3ac1dad489b3a8c1d758e255, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 198939332293671496, guid: d377d66b3ac1dad489b3a8c1d758e255,
-        type: 2}
-      propertyPath: EmissionModule.rateOverTime.scalar
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 198939332293671496, guid: d377d66b3ac1dad489b3a8c1d758e255,
-        type: 2}
-      propertyPath: randomSeed
-      value: -717946674
-      objectReference: {fileID: 0}
-    - target: {fileID: 114038745435526670, guid: d377d66b3ac1dad489b3a8c1d758e255,
-        type: 2}
-      propertyPath: maxVelocity
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 198939332293671496, guid: d377d66b3ac1dad489b3a8c1d758e255,
-        type: 2}
-      propertyPath: moveWithTransform
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 198939332293671496, guid: d377d66b3ac1dad489b3a8c1d758e255,
-        type: 2}
-      propertyPath: useRigidbodyForVelocity
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d377d66b3ac1dad489b3a8c1d758e255, type: 2}
@@ -4706,34 +4618,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114156976880561228, guid: 4a64bc5ed265e9a4a8a9797e5f814e30,
         type: 2}
-      propertyPath: fsm.states.Array.data[1].actionData.unityObjectParams.Array.data[0]
-      value: 
-      objectReference: {fileID: 936544432}
-    - target: {fileID: 114156976880561228, guid: 4a64bc5ed265e9a4a8a9797e5f814e30,
-        type: 2}
       propertyPath: fsm.states.Array.data[1].actionData.fsmGameObjectParams.Array.data[0].value
       value: 
       objectReference: {fileID: 6374707}
-    - target: {fileID: 114156976880561228, guid: 4a64bc5ed265e9a4a8a9797e5f814e30,
-        type: 2}
-      propertyPath: fsm.states.Array.data[1].actionData.fsmGameObjectParams.Array.data[2].useVariable
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114156976880561228, guid: 4a64bc5ed265e9a4a8a9797e5f814e30,
-        type: 2}
-      propertyPath: fsm.states.Array.data[1].actionData.fsmGameObjectParams.Array.data[2].name
-      value: PatrolPath
-      objectReference: {fileID: 0}
-    - target: {fileID: 114156976880561228, guid: 4a64bc5ed265e9a4a8a9797e5f814e30,
-        type: 2}
-      propertyPath: fsm.states.Array.data[1].actionData.fsmGameObjectParams.Array.data[2].showInInspector
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114156976880561228, guid: 4a64bc5ed265e9a4a8a9797e5f814e30,
-        type: 2}
-      propertyPath: fsm.states.Array.data[1].actionData.fsmGameObjectParams.Array.data[2].value
-      value: 
-      objectReference: {fileID: 827519434}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4a64bc5ed265e9a4a8a9797e5f814e30, type: 2}
   m_IsPrefabParent: 0
