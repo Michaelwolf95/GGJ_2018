@@ -7,6 +7,7 @@ namespace GGJ_2018.PlayMaker
     {
         public FsmGameObject gameObject;
 
+        public FsmGameObject CurrentTarget;
         public FsmGameObject ResultTarget;
         public FsmEvent DetectEvent;
 
@@ -58,6 +59,13 @@ namespace GGJ_2018.PlayMaker
                     //Debug.Log("Checking " + result.gameObject.name);
 			        if (CheckCondition(result.gameObject))
 			        {
+			            if (CurrentTarget.Value)
+			            {
+			                if (!CompareTargets(CurrentTarget.Value, result.gameObject))
+			                {
+                                continue;
+			                }
+			            }
 			            //Debug.Log("Detected!");
                         ResultTarget.Value = result.gameObject;
                         Fsm.Event(DetectEvent);
@@ -74,6 +82,9 @@ namespace GGJ_2018.PlayMaker
             return true;
         }
 
-
+        protected virtual bool CompareTargets(GameObject currentTarget, GameObject newTarget)
+        {
+            return true;
+        }
     }
 }

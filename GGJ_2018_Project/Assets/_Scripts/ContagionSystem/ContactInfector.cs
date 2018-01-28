@@ -9,7 +9,7 @@ namespace GGJ_2018.ContagionSystem
         //    var go = col.collider.attachedRigidbody ? col.collider.attachedRigidbody.gameObject : col.collider.gameObject;
         //    TryInfect(go);
         //}
-        public void OnCollisionStay2D(Collision2D col)
+        public virtual void OnCollisionStay2D(Collision2D col)
         {
             var go = col.collider.attachedRigidbody ? col.collider.attachedRigidbody.gameObject : col.collider.gameObject;
             TryInfect(go);
