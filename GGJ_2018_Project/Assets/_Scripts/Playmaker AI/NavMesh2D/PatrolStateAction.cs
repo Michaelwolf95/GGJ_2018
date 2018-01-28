@@ -15,6 +15,12 @@ namespace GGJ_2018.PlayMaker.NavMesh2D
 
         private Timer _waitTimer = new Timer(0.5f);
 
+        public override void Reset()
+        {
+            base.Reset();
+            PatrolPathGameObject = null;
+        }
+
         public override void OnEnter()
         {
             _waitTimer = new Timer(WaitTime.Value);

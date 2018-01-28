@@ -59,10 +59,11 @@ namespace GGJ_2018.PlayMaker
                     //Debug.Log("Checking " + result.gameObject.name);
 			        if (CheckCondition(result.gameObject))
 			        {
-			            if (CurrentTarget.Value)
+			            if (CurrentTarget.Value != null)
 			            {
 			                if (!CompareTargets(CurrentTarget.Value, result.gameObject))
 			                {
+                                Debug.Log("Object ignored.");
                                 continue;
 			                }
 			            }
