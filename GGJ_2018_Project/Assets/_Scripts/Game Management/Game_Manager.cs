@@ -1,31 +1,46 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
-
-namespace GGJ_2018_AP
+namespace GGJ_2018
 {
     public class Game_Manager : MonoBehaviour
     {
         public GameObject pausePanel;
-        public GameObject optionsPanel; 
+        public GameObject optionsPanel;
+
+        public GameObject WinPanel;
+        public GameObject LosePanel;
 
         private bool gamePaused = false;
+
+        public static Game_Manager Instance;
+
+        public Action OnWinLevel = delegate { };
+        public Action OnLoseLevel = delegate {  };
+
+
+        private void Awake()
+        {
+            Instance = this;
+        }
+
         private void Update()
         {
             ScanForKeyStroke();
         }
 
-        public void YouWin(GameObject WinPanel)
+        public void WinLevel()
         {
             WinPanel.SetActive(true);
             Debug.Log("Pause Menu up");
+            OnWinLevel();
         }
 
-        public void YouLose(GameObject defeatMenu)
+        public void LoseLevel()
         {
-            defeatMenu.SetActive(true);
-
+            LosePanel.SetActive(true);
+            OnLoseLevel();
         }
 
         public void PauseGame(GameObject pauseMenu)
@@ -60,6 +75,7 @@ namespace GGJ_2018_AP
 
         public void LoadNextScene(int nextSceneLevel)
         {
+            ResumeGameTime();
             SceneManager.LoadScene(nextSceneLevel, LoadSceneMode.Single);
         }
 

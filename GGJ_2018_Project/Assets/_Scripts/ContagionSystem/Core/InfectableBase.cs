@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections.Generic;
 using NUnit.Framework;
 
@@ -46,7 +47,9 @@ namespace GGJ_2018.ContagionSystem
             get { return (InfectionDict.Count > 0);}
         }
 
-        public event InfectionEventHandler OnInfect;
+        public event InfectionEventHandler OnInfect = delegate(object sender, InfectionEventArgs args) {  };
+        public Action OnCureInfection = delegate {  };
+        public Action OnFullyCured = delegate {  };
 
         protected virtual void Start()
         {
@@ -92,6 +95,12 @@ namespace GGJ_2018.ContagionSystem
                 Infections.Remove(infection);
                 this.InfectionDict.Remove(infection.InfectionName);
                 Destroy(infection.gameObject);
+
+                OnCureInfection();
+                if (Infections.Count == 0)
+                {
+                    OnFullyCured();
+                }
             }
         }
 
@@ -100,10 +109,7 @@ namespace GGJ_2018.ContagionSystem
             InfectionBase[] infections = Infections.ToArray();
             foreach (InfectionBase inf in infections)
             {
-                inf.Cure();
-                Infections.Remove(inf);
-                this.InfectionDict.Remove(inf.InfectionName);
-                Destroy(inf.gameObject);
+                Cure(inf);
             }
         }
 
