@@ -765,6 +765,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1025
   visibleTargets: []
+  meshResolution: 0
+  edgeResolveIterations: 0
+  edgeDstThreshold: 0
+  maskCutawayDst: 0.1
+  viewMeshFilter: {fileID: 0}
 --- !u!4 &782669753
 Transform:
   m_ObjectHideFlags: 0
@@ -1269,7 +1274,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 5.6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1292,7 +1297,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268977610}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -21.381565, y: 6.794327, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1836,6 +1841,7 @@ GameObject:
   - component: {fileID: 1995218561}
   - component: {fileID: 1995218560}
   - component: {fileID: 1995218559}
+  - component: {fileID: 1995218563}
   m_Layer: 9
   m_Name: Doctor_Character
   m_TagString: Untagged
@@ -1865,7 +1871,7 @@ Animator:
   m_GameObject: {fileID: 1995218558}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: efe094988dfad024a9a948ed08148a99, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7dc4edfca0a291a40a0070818bbc1fac, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -1908,7 +1914,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 9e2fe382ce93b0f45b898827e03da4b4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 76fc56b0e250424418392eeee522bf4d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1927,12 +1933,23 @@ Transform:
   m_GameObject: {fileID: 1995218558}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.36, z: 0}
-  m_LocalScale: {x: 0.5605974, y: 0.56059754, z: 0.56059754}
+  m_LocalScale: {x: 2.55, y: 2.55, z: 2.55}
   m_Children:
   - {fileID: 1009698707}
   m_Father: {fileID: 2125390227}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1995218563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1995218558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ab6a07256eab2a4e88d04902fd49385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1996181575
 Prefab:
   m_ObjectHideFlags: 0
@@ -2431,8 +2448,8 @@ MonoBehaviour:
         - 
         actionEnabled: 010101
         actionIsOpen: 010101
-        actionStartIndex: 000000000500000009000000
-        actionHashCodes: 062b1c0336f094001bcdca04
+        actionStartIndex: 00000000060000000a000000
+        actionHashCodes: 8d3c7e0536f094001bcdca04
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -2511,14 +2528,15 @@ MonoBehaviour:
         - 
         - OnReachTarget
         - 
-        byteData: 0000000000000000000101
+        byteData: 010000000000000000000101
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 130000001400000001000000020000000200000014000000130000000f000000010000000f0000000f0000000f00000017000000170000001700000001000000
+        paramDataType: 13000000010000001400000001000000020000000200000014000000130000000f000000010000000f0000000f0000000f00000017000000170000001700000001000000
         paramName:
         - Target
+        - EveryFrame
         - agentGameObject
         - OverrideAgentVariables
         - AgentSpeed
@@ -2534,8 +2552,8 @@ MonoBehaviour:
         - lessThan
         - greaterThan
         - everyFrame
-        paramDataPos: 0000000000000000000000000100000005000000010000000100000000000000090000000100000002000000030000000000000001000000020000000a000000
-        paramByteDataSize: 00000000000000000100000004000000040000000000000000000000000000000100000000000000000000000000000000000000000000000000000001000000
+        paramDataPos: 0000000000000000000000000100000002000000060000000100000001000000000000000a0000000100000002000000030000000000000001000000020000000b000000
+        paramByteDataSize: 0000000001000000000000000100000004000000040000000000000000000000000000000100000000000000000000000000000000000000000000000000000001000000
     - name: Attack
       description: 
       colorIndex: 0
