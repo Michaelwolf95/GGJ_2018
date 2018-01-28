@@ -485,6 +485,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 45ab2557dd7b02143a2d7594ca09815b, type: 2}
   m_IsPrefabParent: 0
+--- !u!33 &393751123 stripped
+MeshFilter:
+  m_PrefabParentObject: {fileID: 33054799548355658, guid: 4a64bc5ed265e9a4a8a9797e5f814e30,
+    type: 2}
+  m_PrefabInternal: {fileID: 1776037359}
 --- !u!1 &535534559
 GameObject:
   m_ObjectHideFlags: 0
@@ -765,6 +770,11 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1025
   visibleTargets: []
+  meshResolution: 0
+  edgeResolveIterations: 0
+  edgeDstThreshold: 0
+  maskCutawayDst: 0.1
+  viewMeshFilter: {fileID: 393751123}
 --- !u!4 &782669753
 Transform:
   m_ObjectHideFlags: 0
@@ -1269,7 +1279,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 5.6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1292,7 +1302,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268977610}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -20.204233, y: 6.808059, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1926,7 +1936,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1995218558}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.36, z: 0}
+  m_LocalPosition: {x: 0, y: -0.67, z: 0}
   m_LocalScale: {x: 0.5605974, y: 0.56059754, z: 0.56059754}
   m_Children:
   - {fileID: 1009698707}
@@ -2431,8 +2441,8 @@ MonoBehaviour:
         - 
         actionEnabled: 010101
         actionIsOpen: 010101
-        actionStartIndex: 000000000500000009000000
-        actionHashCodes: 062b1c0336f094001bcdca04
+        actionStartIndex: 00000000060000000a000000
+        actionHashCodes: 8d3c7e0536f094001bcdca04
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -2511,14 +2521,15 @@ MonoBehaviour:
         - 
         - OnReachTarget
         - 
-        byteData: 0000000000000000000101
+        byteData: 010000000000000000000101
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 130000001400000001000000020000000200000014000000130000000f000000010000000f0000000f0000000f00000017000000170000001700000001000000
+        paramDataType: 13000000010000001400000001000000020000000200000014000000130000000f000000010000000f0000000f0000000f00000017000000170000001700000001000000
         paramName:
         - Target
+        - EveryFrame
         - agentGameObject
         - OverrideAgentVariables
         - AgentSpeed
@@ -2534,8 +2545,8 @@ MonoBehaviour:
         - lessThan
         - greaterThan
         - everyFrame
-        paramDataPos: 0000000000000000000000000100000005000000010000000100000000000000090000000100000002000000030000000000000001000000020000000a000000
-        paramByteDataSize: 00000000000000000100000004000000040000000000000000000000000000000100000000000000000000000000000000000000000000000000000001000000
+        paramDataPos: 0000000000000000000000000100000002000000060000000100000001000000000000000a0000000100000002000000030000000000000001000000020000000b000000
+        paramByteDataSize: 0000000001000000000000000100000004000000040000000000000000000000000000000100000000000000000000000000000000000000000000000000000001000000
     - name: Attack
       description: 
       colorIndex: 0
@@ -2746,7 +2757,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2125390223}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.673655, y: 8.55, z: 0}
+  m_LocalPosition: {x: -8.53, y: 8.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1995218562}
