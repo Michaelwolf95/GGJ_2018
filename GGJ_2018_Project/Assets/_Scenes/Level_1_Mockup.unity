@@ -1621,11 +1621,6 @@ Prefab:
       propertyPath: m_Name
       value: Doctor (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 114753342243604256, guid: 7e3242aad8298114cab98f843f208d17,
-        type: 2}
-      propertyPath: fsm.preprocessed
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7e3242aad8298114cab98f843f208d17, type: 2}
   m_IsPrefabParent: 0
@@ -1638,7 +1633,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4603301823245010, guid: 4a64bc5ed265e9a4a8a9797e5f814e30, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.39
+      value: -0.029
       objectReference: {fileID: 0}
     - target: {fileID: 4603301823245010, guid: 4a64bc5ed265e9a4a8a9797e5f814e30, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1668,19 +1663,19 @@ Prefab:
       propertyPath: m_RootOrder
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: 1927183527512954, guid: 4a64bc5ed265e9a4a8a9797e5f814e30, type: 2}
+      propertyPath: m_Name
+      value: Patient (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 114156976880561228, guid: 4a64bc5ed265e9a4a8a9797e5f814e30,
         type: 2}
       propertyPath: fsm.states.Array.data[1].actionData.fsmGameObjectParams.Array.data[0].value
       value: 
       objectReference: {fileID: 6374707}
-    - target: {fileID: 50239619739171436, guid: 4a64bc5ed265e9a4a8a9797e5f814e30,
+    - target: {fileID: 114156976880561228, guid: 4a64bc5ed265e9a4a8a9797e5f814e30,
         type: 2}
-      propertyPath: m_UseFullKinematicContacts
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1927183527512954, guid: 4a64bc5ed265e9a4a8a9797e5f814e30, type: 2}
-      propertyPath: m_Name
-      value: Patient (1)
+      propertyPath: fsm.preprocessed
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4a64bc5ed265e9a4a8a9797e5f814e30, type: 2}
