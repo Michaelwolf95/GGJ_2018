@@ -11,22 +11,30 @@ public class SpriteDepth : MonoBehaviour
         _sr = GetComponentInParent<SpriteRenderer>();
     }
 
-    void Update()
-    {
-        if (_sr)
-        {
-            //float ypos = _sr.bounds.
-            if (this.transform.position.y <= -100f)
-            {
+    //void OnTriggerStay2d(Collider2D c) {
+    //    if (_sr) {
+    //        _sr.sortingOrder = (int)c.transform.position.y * 2;
+    //        if (c.transform.position.y > GetComponentInParent<Transform>().position.y) {
+    //            _sr.sortingOrder = _sr.sortingOrder - 1;
+    //        }
+    //        else {
+    //            _sr.sortingOrder = _sr.sortingOrder + 1;
+    //        }
+    //    }
+    //}
+
+    void Update() {
+        Debug.DrawLine(this.transform.position, _sr.bounds.min, Color.red);
+        if (_sr) {
+            float yPos = _sr.bounds.min.y;
+            if (yPos <= -100f) {
                 _sr.sortingOrder = -200;
             }
-            else if (this.transform.position.y >= 100f)
-            {
+            else if (yPos >= 100f) {
                 _sr.sortingOrder = 200;
             }
-            else
-            {
-                float yPos = this.transform.position.y + 100f;
+            else {
+                yPos = yPos + 100f;
                 _sr.sortingOrder = -(int)(yPos * 2f);
             }
             //_sr.sortingOrder
