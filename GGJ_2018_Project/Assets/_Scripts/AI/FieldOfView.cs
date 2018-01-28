@@ -20,19 +20,26 @@ public class FieldOfView : MonoBehaviour
 
     public float maskCutawayDst = .1f;
 
+    public bool showFov = true;
     public MeshFilter viewMeshFilter;
     Mesh viewMesh;
 
     void Start()
     {
-        viewMesh = new Mesh();
-        viewMesh.name = "View Mesh";
-        viewMeshFilter.mesh = viewMesh;
+        if (showFov)
+        {
+            viewMesh = new Mesh();
+            viewMesh.name = "View Mesh";
+            viewMeshFilter.mesh = viewMesh;
+        }
     }
 
     void LateUpdate()
     {
-        DrawFieldOfView();
+        if (showFov)
+        {
+            DrawFieldOfView();
+        }
     }
 
 
