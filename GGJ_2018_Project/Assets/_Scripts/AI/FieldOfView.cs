@@ -55,6 +55,7 @@ public class FieldOfView : MonoBehaviour
                 RaycastHit2D hit2d = Physics2D.Raycast(transform.position, dirToTarget, dstToTarget, obstacleMask);
                 if (hit2d.collider == null)
                 {
+                    ///Debug.Log("Hit..." + target.name);
                     visTargets.Add(target);
                 }
             }
