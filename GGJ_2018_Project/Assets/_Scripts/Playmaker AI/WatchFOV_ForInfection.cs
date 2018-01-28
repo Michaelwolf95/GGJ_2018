@@ -18,12 +18,12 @@ namespace GGJ_2018.PlayMaker
             return false;
         }
 
-        protected override bool CompareTargets(GameObject currentTarget, GameObject newTarget)
-        {
-            var curDist = Vector2.Distance(currentTarget.transform.position, _fov.transform.position);
-            var newDist = Vector2.Distance(newTarget.transform.position, _fov.transform.position);
+        //protected override bool CompareTargets(GameObject currentTarget, GameObject newTarget)
+        //{
+        //    var curDist = Vector2.Distance(currentTarget.transform.position, _fov.transform.position);
+        //    var newDist = Vector2.Distance(newTarget.transform.position, _fov.transform.position);
 
-            return (newDist < curDist);
-        }
+        //    return (newDist < curDist);
+        //}
     }
 }
