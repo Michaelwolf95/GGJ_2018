@@ -1,14 +1,15 @@
 fileFormatVersion: 2
-guid: 832682dffbd7cef45adee86fc41d8701
-timeCreated: 1517168801
+guid: a9a1f12bd8883d644a28257f15b595c5
+timeCreated: 1517167883
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: PlaguerWalkR_0
-    21300002: PlaguerWalkR_1
-    21300004: PlaguerWalkR_2
-    21300006: PlaguerWalkR_4
-    21300008: PlaguerWalkR_5
+    21300000: Patient Idle Sheet Right_0
+    21300002: Patient Idle Sheet Right_1
+    21300004: Patient Idle Sheet Right_2
+    21300006: Patient Idle Sheet Right_3
+    21300008: Patient Idle Sheet Right_4
+    21300010: Patient Idle Sheet Right_5
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -85,71 +86,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlaguerWalkR_0
+      name: Patient Idle Sheet Right_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 0
-        width: 523
-        height: 973
+        x: 164
+        y: 985
+        width: 510
+        height: 933
       alignment: 9
-      pivot: {x: 0.5873498, y: 0}
+      pivot: {x: 0.547996, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: PlaguerWalkR_1
+      name: Patient Idle Sheet Right_1
       rect:
         serializedVersion: 2
-        x: 529
-        y: 22
-        width: 550
-        height: 950
+        x: 674
+        y: 978
+        width: 505
+        height: 927
       alignment: 9
-      pivot: {x: 0.56229615, y: 0}
+      pivot: {x: 0.5323143, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: PlaguerWalkR_2
+      name: Patient Idle Sheet Right_2
       rect:
         serializedVersion: 2
-        x: 1079
-        y: 9
-        width: 486
-        height: 964
+        x: 1179
+        y: 981
+        width: 492
+        height: 920
       alignment: 9
-      pivot: {x: 0.63708293, y: 0}
+      pivot: {x: 0.5165839, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: PlaguerWalkR_4
+      name: Patient Idle Sheet Right_3
       rect:
         serializedVersion: 2
-        x: 1572
-        y: 16
-        width: 508
-        height: 957
+        x: 154
+        y: 27
+        width: 505
+        height: 927
       alignment: 9
-      pivot: {x: 0.6199055, y: 0}
+      pivot: {x: 0.53585684, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: PlaguerWalkR_5
+      name: Patient Idle Sheet Right_4
       rect:
         serializedVersion: 2
-        x: 2081
-        y: 8
-        width: 499
-        height: 964
+        x: 659
+        y: 28
+        width: 510
+        height: 933
       alignment: 9
-      pivot: {x: 0.6399978, y: 0}
+      pivot: {x: 0.55579394, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Patient Idle Sheet Right_5
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 27
+        width: 502
+        height: 927
+      alignment: 9
+      pivot: {x: 0.5298124, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

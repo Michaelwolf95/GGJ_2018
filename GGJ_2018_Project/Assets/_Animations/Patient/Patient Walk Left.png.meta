@@ -1,14 +1,13 @@
 fileFormatVersion: 2
-guid: 832682dffbd7cef45adee86fc41d8701
-timeCreated: 1517168801
+guid: 435bf190791db9f4bb66e50e90296253
+timeCreated: 1517167696
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: PlaguerWalkR_0
-    21300002: PlaguerWalkR_1
-    21300004: PlaguerWalkR_2
-    21300006: PlaguerWalkR_4
-    21300008: PlaguerWalkR_5
+    21300000: Patient Walk Left_0
+    21300002: Patient Walk Left_2
+    21300004: Patient Walk Left_3
+    21300006: Patient Walk Left_4
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -85,71 +84,57 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PlaguerWalkR_0
+      name: Patient Walk Left_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 0
-        width: 523
-        height: 973
+        x: 270
+        y: 984
+        width: 517
+        height: 941
       alignment: 9
-      pivot: {x: 0.5873498, y: 0}
+      pivot: {x: 0.31587595, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 4}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Patient Walk Left_2
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 981
+        width: 657
+        height: 940
+      alignment: 9
+      pivot: {x: 0.42962524, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: PlaguerWalkR_1
+      name: Patient Walk Left_3
       rect:
         serializedVersion: 2
-        x: 529
-        y: 22
-        width: 550
-        height: 950
+        x: 274
+        y: 32
+        width: 525
+        height: 920
       alignment: 9
-      pivot: {x: 0.56229615, y: 0}
+      pivot: {x: 0.33940372, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: PlaguerWalkR_2
+      name: Patient Walk Left_4
       rect:
         serializedVersion: 2
-        x: 1079
-        y: 9
-        width: 486
-        height: 964
+        x: 1029
+        y: 32
+        width: 596
+        height: 915
       alignment: 9
-      pivot: {x: 0.63708293, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: PlaguerWalkR_4
-      rect:
-        serializedVersion: 2
-        x: 1572
-        y: 16
-        width: 508
-        height: 957
-      alignment: 9
-      pivot: {x: 0.6199055, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: PlaguerWalkR_5
-      rect:
-        serializedVersion: 2
-        x: 2081
-        y: 8
-        width: 499
-        height: 964
-      alignment: 9
-      pivot: {x: 0.6399978, y: 0}
+      pivot: {x: 0.39960536, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

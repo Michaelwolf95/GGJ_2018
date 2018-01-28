@@ -71,6 +71,9 @@ GameObject:
   - component: {fileID: 4005419598447302}
   - component: {fileID: 212280267422510302}
   - component: {fileID: 114081310908353090}
+  - component: {fileID: 95571505958242222}
+  - component: {fileID: 114022550289946222}
+  - component: {fileID: 114040205110886954}
   m_Layer: 9
   m_Name: Patient_Character
   m_TagString: Untagged
@@ -124,7 +127,7 @@ Transform:
   m_GameObject: {fileID: 1444677489453272}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: -0.43, z: 0}
-  m_LocalScale: {x: 0.1735158, y: 0.1735158, z: 0.1735158}
+  m_LocalScale: {x: 2.33, y: 2.33, z: 2.33}
   m_Children: []
   m_Father: {fileID: 4603301823245010}
   m_RootOrder: 0
@@ -189,7 +192,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1927183527512954}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.05, y: -1.81, z: 0}
+  m_LocalPosition: {x: -19.26, y: 9.33, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4005419598447302}
@@ -380,6 +383,46 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!95 &95571505958242222
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1444677489453272}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: feb62eb105e4f3141b7cf3c67771a47e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114022550289946222
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1444677489453272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ab6a07256eab2a4e88d04902fd49385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useDownward: 0
+--- !u!114 &114040205110886954
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1444677489453272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877e64bc716f4f2468160376e13cfa3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114081310908353090
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -807,7 +850,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: f4ea8f9577cfdcd47ad98baee42b71e9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 045e843c6bfe26e4699a0b2d3ac093f5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
