@@ -132,6 +132,9 @@ GameObject:
   - component: {fileID: 70040994651238096}
   - component: {fileID: 50778130399341608}
   - component: {fileID: 114675337126881620}
+  - component: {fileID: 82713533239269862}
+  - component: {fileID: 114305528008935228}
+  - component: {fileID: 114794867707479400}
   m_Layer: 2
   m_Name: TriggerInfector
   m_TagString: Untagged
@@ -331,6 +334,86 @@ CapsuleCollider2D:
   m_Offset: {x: 0.12587452, y: 0.5019531}
   m_Size: {x: 0.74825096, y: 1.0039062}
   m_Direction: 0
+--- !u!82 &82713533239269862
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1937129550676694}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!95 &95508750030318840
 Animator:
   serializedVersion: 3
@@ -375,6 +458,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 114859348882289580}
   maxVelocity: 5
+--- !u!114 &114305528008935228
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1937129550676694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb4cdd4cfbb3c9a4fafece5ed80f3488, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SubscribableObject: {fileID: 0}
+  m_AudioSource: {fileID: 82713533239269862}
+  m_AudioClips:
+  - {fileID: 8300000, guid: 9a840992a2fe61f4e99421cce4ebff5e, type: 3}
+  - {fileID: 8300000, guid: 5d48bbd62e8aa8244ada62af97c024ca, type: 3}
+  - {fileID: 8300000, guid: b2b00408daa7c1049a79320d4c28f78b, type: 3}
+  - {fileID: 8300000, guid: 466d037e046505e44b5cbe1d35bc8b61, type: 3}
+  - {fileID: 8300000, guid: 73dbd84fb44af3449b05b15ac1c3dcb3, type: 3}
 --- !u!114 &114410387034173448
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -386,7 +488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 997b83722e7fac24dbfb49295ec1c2e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SubscribableObject: {fileID: 0}
+  SubscribableObject: {fileID: 114461990006548930}
 --- !u!114 &114461990006548930
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -487,6 +589,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SubscribableObject: {fileID: 114567821842857072}
   _infectionPrefab: {fileID: 1667963604439768}
+--- !u!114 &114794867707479400
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1937129550676694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd41cf12d490d954c8f2999f6781924c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SubscribableObject: {fileID: 0}
+  m_Animator: {fileID: 95508750030318840}
+  m_StateName: Cough
+  m_Layer: 0
 --- !u!114 &114859348882289580
 MonoBehaviour:
   m_ObjectHideFlags: 1

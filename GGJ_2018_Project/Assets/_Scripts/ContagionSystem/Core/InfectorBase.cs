@@ -16,9 +16,9 @@ namespace GGJ_2018.ContagionSystem
             //Debug.Log("Infecting..");
             if (inf != null)
             {
-                //Debug.Log("Infecting!");
                 if(inf.Infect(this, new InfectionEventArgs(InfectionPrefab, TransmissionMedium)))
                 {
+                    Debug.Log("Infect Success!");
                     OnInfectSuccess();
                 }
             }
