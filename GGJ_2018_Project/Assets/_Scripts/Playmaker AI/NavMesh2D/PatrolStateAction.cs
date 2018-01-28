@@ -35,6 +35,8 @@ namespace GGJ_2018.PlayMaker.NavMesh2D
                 }
 
                 _path = PatrolPathGameObject.Value.GetComponent<PatrolPath>();
+
+                
             }
 
         }
@@ -67,11 +69,14 @@ namespace GGJ_2018.PlayMaker.NavMesh2D
 
         protected void FindNextPathPosition()
         {
-            if(_path.PathNodes.Length <=1) return;
+            if (_path.PathNodes.Length == 0)
+            {
+                _path.PathNodes = new Transform[] { _path.transform };
+            }
+
             //Debug.Log("Next Position");
             Vector3 newPos = _path.GetNextNode().position;
             navMeshAgent.SetDestination(newPos);
-            
         }
     }
 }

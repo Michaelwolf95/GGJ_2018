@@ -14,7 +14,6 @@ public class FDAnimation : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		anim = GetComponent<Animator>();
-		anim.runtimeAnimatorController = Instantiate(Resources.Load("FDAnimationController")) as RuntimeAnimatorController;
 	}
 
 	public void SetAnimationDirection(Vector2 moveDirection) {
