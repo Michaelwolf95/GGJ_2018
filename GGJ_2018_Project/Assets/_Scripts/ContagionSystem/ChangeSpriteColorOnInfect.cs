@@ -8,6 +8,11 @@ namespace GGJ_2018.ContagionSystem
 
     public class ChangeSpriteColorOnInfect : SubscriberBase<InfectionBase>
     {
+        public Color NewColor = Color.green;
+
+        protected SpriteRenderer _spriteRenderer;
+        protected Color _oldColor;
+
         protected override void SubscribeEvents()
         {
             SubscribableObject.OnInfect += OnInfect;
@@ -22,18 +27,26 @@ namespace GGJ_2018.ContagionSystem
 
         private void OnInfect(InfectableBase host)
         {
-            var sprite = host.GetComponent<SpriteRenderer>();
-            if (sprite)
+            if (!_spriteRenderer)
             {
-                sprite.color = Color.red;
+                _spriteRenderer = host.GetComponent<SpriteRenderer>();
+                if (!_spriteRenderer)
+                {
+                    _spriteRenderer = host.GetComponentInChildren<SpriteRenderer>();
+                }
+            }
+            if (_spriteRenderer)
+            {
+                _oldColor = _spriteRenderer.color;
+                _spriteRenderer.color = NewColor;
             }
         }
         private void OnCure(InfectableBase host)
         {
-            var sprite = host.GetComponent<SpriteRenderer>();
-            if (sprite)
+            //var _spriteRenderer = host.GetComponent<SpriteRenderer>();
+            if (_spriteRenderer)
             {
-                sprite.color = Color.white;
+                _spriteRenderer.color = _oldColor;
             }
         }
     }

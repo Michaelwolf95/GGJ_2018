@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using System.Collections.Generic;
 using NUnit.Framework;
 
@@ -32,6 +33,8 @@ namespace GGJ_2018.ContagionSystem
 
         [SerializeField] protected List<InfectionBase> Infections;
 
+        [SerializeField] protected bool m_InitInfectionsAtStart = true;
+
         public Dictionary<string, InfectionBase> InfectionDict = new Dictionary<string, InfectionBase>();
 
         public TransmissionMediumType[] MediumImmunities
@@ -44,14 +47,19 @@ namespace GGJ_2018.ContagionSystem
             get { return (InfectionDict.Count > 0);}
         }
 
-        public event InfectionEventHandler OnInfect;
+        public event InfectionEventHandler OnInfect = delegate(object sender, InfectionEventArgs args) {  };
+        public Action OnCureInfection = delegate {  };
+        public Action OnFullyCured = delegate {  };
 
         protected virtual void Start()
         {
-            foreach (var inf in Infections)
+            if(m_InitInfectionsAtStart)
             {
-                inf.Infect(this);
-                InfectionDict.Add(inf.InfectionName, inf);
+                foreach (var inf in Infections)
+                {
+                    inf.Infect(this);
+                    InfectionDict.Add(inf.InfectionName, inf);
+                }
             }
         }
 
@@ -87,6 +95,12 @@ namespace GGJ_2018.ContagionSystem
                 Infections.Remove(infection);
                 this.InfectionDict.Remove(infection.InfectionName);
                 Destroy(infection.gameObject);
+
+                OnCureInfection();
+                if (Infections.Count == 0)
+                {
+                    OnFullyCured();
+                }
             }
         }
 
@@ -95,10 +109,7 @@ namespace GGJ_2018.ContagionSystem
             InfectionBase[] infections = Infections.ToArray();
             foreach (InfectionBase inf in infections)
             {
-                inf.Cure();
-                Infections.Remove(inf);
-                this.InfectionDict.Remove(inf.InfectionName);
-                Destroy(inf.gameObject);
+                Cure(inf);
             }
         }
 

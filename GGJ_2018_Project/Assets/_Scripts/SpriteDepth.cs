@@ -2,19 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpriteDepth : MonoBehaviour {
+public class SpriteDepth : MonoBehaviour
+{
     private SpriteRenderer _sr;
-    void Awake() {
+
+    void Awake()
+    {
         _sr = GetComponentInParent<SpriteRenderer>();
     }
-	// Update is called once per frame
-	void OnTriggerStay2D(Collider2D c) {
-        _sr.sortingOrder = (int)c.transform.position.y * 2;
-        if (c.transform.position.y > GetComponentInParent<Transform>().position.y) {          
-            c.GetComponent<SpriteRenderer>().sortingOrder = _sr.sortingOrder - 1;
-        }
-        else {
-            c.GetComponent<SpriteRenderer>().sortingOrder = _sr.sortingOrder + 1;
+
+    void Update()
+    {
+        if (_sr)
+        {
+            if (this.transform.position.y <= -100f)
+            {
+                _sr.sortingOrder = -200;
+            }
+            else if (this.transform.position.y >= 100f)
+            {
+                _sr.sortingOrder = 200;
+            }
+            else
+            {
+                float yPos = this.transform.position.y + 100f;
+                _sr.sortingOrder = -(int)(yPos * 2f);
+            }
+            //_sr.sortingOrder
         }
     }
 }
