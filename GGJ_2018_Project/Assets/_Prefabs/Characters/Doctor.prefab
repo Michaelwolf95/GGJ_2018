@@ -28,7 +28,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1304850431577684
 GameObject:
   m_ObjectHideFlags: 1
@@ -135,6 +135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4615384052956068}
   - component: {fileID: 61153107147880170}
+  - component: {fileID: 70983208396858664}
   m_Layer: 9
   m_Name: Collider
   m_TagString: Untagged
@@ -361,7 +362,7 @@ BoxCollider2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1902300046901574}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -405,6 +406,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4925683, y: 2.0906854}
   m_EdgeRadius: 0
+--- !u!70 &70983208396858664
+CapsuleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1902300046901574}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.05105567}
+  m_Size: {x: 0.74825096, y: 0.9017949}
+  m_Direction: 0
 --- !u!95 &95323008197378390
 Animator:
   serializedVersion: 3
@@ -658,7 +674,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0.5
+          value: 1
         fsmIntParams: []
         fsmBoolParams: []
         fsmVector2Params: []
