@@ -901,6 +901,56 @@ Transform:
   m_PrefabParentObject: {fileID: 4100328732478842, guid: 739cece462d81ac429d198386203573d,
     type: 2}
   m_PrefabInternal: {fileID: 1522593969}
+--- !u!1 &664344684
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 664344686}
+  - component: {fileID: 664344685}
+  m_Layer: 0
+  m_Name: PlayMakerGUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &664344685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 664344684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -73581967, guid: e743331561ef77147ae48cda9bcb8209, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  previewOnGUI: 1
+  enableGUILayout: 0
+  drawStateLabels: 0
+  enableStateLabelsInBuilds: 0
+  GUITextureStateLabels: 1
+  GUITextStateLabels: 1
+  filterLabelsWithDistance: 0
+  maxLabelDistance: 10
+  controlMouseCursor: 0
+  labelScale: 1
+--- !u!4 &664344686
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 664344684}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &691029074 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1340960026705350, guid: 791b72bbd40a76843b14e2ba73d3fb23,
@@ -1938,7 +1988,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1268977610}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -25.66798, y: 6.8324533, z: -10}
+  m_LocalPosition: {x: -24.195408, y: 6.8324533, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2075,7 +2125,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4726410006828694, guid: 693ee891840c23b4990435d5a44923d7, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 7.760736
+      value: 7.82
       objectReference: {fileID: 0}
     - target: {fileID: 4726410006828694, guid: 693ee891840c23b4990435d5a44923d7, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2847,6 +2897,16 @@ Prefab:
     - target: {fileID: 1841417207148332, guid: 739cece462d81ac429d198386203573d, type: 2}
       propertyPath: m_Name
       value: Wall_Side (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114214969379495798, guid: 739cece462d81ac429d198386203573d,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 212933342565966114, guid: 739cece462d81ac429d198386203573d,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 739cece462d81ac429d198386203573d, type: 2}
