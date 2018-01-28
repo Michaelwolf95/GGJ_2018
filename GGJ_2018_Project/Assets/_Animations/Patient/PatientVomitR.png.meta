@@ -1,0 +1,177 @@
+fileFormatVersion: 2
+guid: 710ed97901103ec449f6c7cae0f344da
+timeCreated: 1517173555
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: PatientVomitR_0
+    21300002: PatientVomitR_1
+    21300004: PatientVomitR_2
+    21300006: PatientVomitR_3
+    21300008: PatientVomitR_4
+    21300010: PatientVomitR_5
+    21300012: PatientVomitR_6
+    21300014: PatientVomitR_7
+    21300016: PatientVomitR_8
+    21300018: PatientVomitR_9
+    21300020: PatientVomitR_10
+    21300022: PatientVomitR_11
+    21300024: PatientVomitR_12
+    21300026: PatientVomitR_13
+    21300028: PatientVomitR_14
+    21300030: PatientVomitR_15
+    21300032: PatientVomitR_16
+    21300034: PatientVomitR_17
+    21300036: PatientVomitR_18
+    21300038: PatientVomitR_19
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 1024
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PatientVomitR_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 63
+        width: 729
+        height: 909
+      alignment: 9
+      pivot: {x: 0.48541424, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PatientVomitR_1
+      rect:
+        serializedVersion: 2
+        x: 727
+        y: 3
+        width: 736
+        height: 969
+      alignment: 9
+      pivot: {x: 0.4855529, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PatientVomitR_5
+      rect:
+        serializedVersion: 2
+        x: 1482
+        y: 52
+        width: 665
+        height: 910
+      alignment: 9
+      pivot: {x: 0.44403672, y: -0.002921119}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PatientVomitR_7
+      rect:
+        serializedVersion: 2
+        x: 2188
+        y: 48
+        width: 640
+        height: 904
+      alignment: 9
+      pivot: {x: 0.4584648, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PatientVomitR_9
+      rect:
+        serializedVersion: 2
+        x: 2891
+        y: 55
+        width: 637
+        height: 897
+      alignment: 9
+      pivot: {x: 0.44575018, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
