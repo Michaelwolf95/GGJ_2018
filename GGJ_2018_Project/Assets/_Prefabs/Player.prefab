@@ -72,6 +72,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4984034594543820}
+  - component: {fileID: 114651132177575248}
   - component: {fileID: 114038745435526670}
   - component: {fileID: 114525741462091894}
   - component: {fileID: 50670631116741134}
@@ -195,7 +196,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1487306784612928}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.887468, y: -1.6306164, z: 0}
+  m_LocalPosition: {x: -25.96, y: 6.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4968799945897874}
@@ -417,6 +418,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InfectionName: SimpleInfection
+--- !u!114 &114651132177575248
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1487306784612928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f9b2a2ad76766b4eaf61739e8ac316e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114675337126881620
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -455,6 +467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ab6a07256eab2a4e88d04902fd49385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useDownward: 0
 --- !u!198 &198939332293671496
 ParticleSystem:
   m_ObjectHideFlags: 1
