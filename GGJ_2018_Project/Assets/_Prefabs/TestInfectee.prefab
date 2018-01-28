@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 61358610151996618}
   - component: {fileID: 114147139114155426}
   m_Layer: 9
-  m_Name: Infectee
+  m_Name: TestInfectee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
