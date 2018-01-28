@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 822f3e6474eb0834d8e6cfc5a61dec5e
-timeCreated: 1517105655
+guid: 70aed134e883c4942927bfe65cea7180
+timeCreated: 1517117394
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -89,10 +89,10 @@ TextureImporter:
       name: PlaguerWalkL_0
       rect:
         serializedVersion: 2
-        x: 169
-        y: 1071
-        width: 526
-        height: 973
+        x: 0
+        y: 8
+        width: 499
+        height: 964
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -103,10 +103,10 @@ TextureImporter:
       name: PlaguerWalkL_1
       rect:
         serializedVersion: 2
-        x: 1222
-        y: 1066
-        width: 487
-        height: 965
+        x: 500
+        y: 16
+        width: 509
+        height: 957
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,10 +117,10 @@ TextureImporter:
       name: PlaguerWalkL_2
       rect:
         serializedVersion: 2
-        x: 2244
-        y: 1071
-        width: 499
-        height: 964
+        x: 1010
+        y: 244
+        width: 5
+        height: 4
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,10 +131,10 @@ TextureImporter:
       name: PlaguerWalkL_3
       rect:
         serializedVersion: 2
-        x: 196
-        y: 48
-        width: 550
-        height: 950
+        x: 1015
+        y: 8
+        width: 486
+        height: 965
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,10 +145,24 @@ TextureImporter:
       name: PlaguerWalkL_4
       rect:
         serializedVersion: 2
-        x: 1223
-        y: 47
-        width: 509
-        height: 957
+        x: 1501
+        y: 22
+        width: 550
+        height: 950
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PlaguerWalkL_5
+      rect:
+        serializedVersion: 2
+        x: 2053
+        y: 0
+        width: 524
+        height: 973
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
