@@ -92,6 +92,11 @@ namespace GGJ_2018
             Application.Quit();
         }
 
+        public void LoadFinalLevel()
+        {
+            SceneManager.LoadScene(6);
+        }
+
 
         private void ScanForKeyStroke()
         {
