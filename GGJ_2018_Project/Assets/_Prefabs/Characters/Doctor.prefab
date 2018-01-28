@@ -72,6 +72,8 @@ GameObject:
   - component: {fileID: 212422280618907670}
   - component: {fileID: 95323008197378390}
   - component: {fileID: 114034213556806882}
+  - component: {fileID: 114169927163562944}
+  - component: {fileID: 114386255201382632}
   m_Layer: 9
   m_Name: Doctor_Character
   m_TagString: Untagged
@@ -214,8 +216,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1343856077521226}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.36, z: 0}
-  m_LocalScale: {x: 0.5605974, y: 0.56059754, z: 0.56059754}
+  m_LocalPosition: {x: 0, y: -0.3, z: 0}
+  m_LocalScale: {x: 2.8740385, y: 2.87404, z: 2.87404}
   m_Children:
   - {fileID: 4262348453047584}
   m_Father: {fileID: 4605725738167456}
@@ -284,7 +286,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1947391842973250}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.1, y: 0.22, z: 0}
+  m_LocalPosition: {x: 4.74, y: -2.71, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4147507940315994}
@@ -502,7 +504,7 @@ Animator:
   m_GameObject: {fileID: 1343856077521226}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: efe094988dfad024a9a948ed08148a99, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7dc4edfca0a291a40a0070818bbc1fac, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -521,6 +523,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edb7529e266471641ae26c873022c308, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114169927163562944
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1343856077521226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877e64bc716f4f2468160376e13cfa3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114386255201382632
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1343856077521226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ab6a07256eab2a4e88d04902fd49385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useDownward: 0
 --- !u!114 &114560456805958166
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1088,7 +1113,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -1181,7 +1206,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 9e2fe382ce93b0f45b898827e03da4b4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 76fc56b0e250424418392eeee522bf4d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
