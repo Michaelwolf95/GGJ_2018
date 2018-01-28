@@ -1,14 +1,14 @@
 fileFormatVersion: 2
-guid: 08537f83c6c1f234ab231e4271cedb95
-timeCreated: 1517105622
+guid: 832682dffbd7cef45adee86fc41d8701
+timeCreated: 1517115825
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: PlaguerWalkR_1
-    21300002: PlaguerWalkR_2
-    21300004: PlaguerWalkR_3
+    21300000: PlaguerWalkR_0
+    21300002: PlaguerWalkR_1
+    21300004: PlaguerWalkR_2
     21300006: PlaguerWalkR_4
-    21300008: PlaguerWalkR_6
+    21300008: PlaguerWalkR_5
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -85,13 +85,27 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
+      name: PlaguerWalkR_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 523
+        height: 973
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
       name: PlaguerWalkR_1
       rect:
         serializedVersion: 2
-        x: 181
-        y: 1071
-        width: 520
-        height: 973
+        x: 529
+        y: 22
+        width: 550
+        height: 950
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -102,23 +116,9 @@ TextureImporter:
       name: PlaguerWalkR_2
       rect:
         serializedVersion: 2
-        x: 1222
-        y: 1066
-        width: 487
-        height: 965
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: PlaguerWalkR_3
-      rect:
-        serializedVersion: 2
-        x: 2243
-        y: 1071
-        width: 500
+        x: 1079
+        y: 9
+        width: 486
         height: 964
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -130,10 +130,10 @@ TextureImporter:
       name: PlaguerWalkR_4
       rect:
         serializedVersion: 2
-        x: 194
-        y: 48
-        width: 551
-        height: 950
+        x: 1572
+        y: 16
+        width: 508
+        height: 957
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,13 +141,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: PlaguerWalkR_6
+      name: PlaguerWalkR_5
       rect:
         serializedVersion: 2
-        x: 1223
-        y: 47
-        width: 509
-        height: 957
+        x: 2081
+        y: 8
+        width: 499
+        height: 964
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -23,10 +23,12 @@ namespace GGJ_2018.PlayMaker.NavMesh2D
 
         public override void OnEnter()
         {
+            base.OnEnter();
             _waitTimer = new Timer(WaitTime.Value);
             if (UsePath)
             {
-                if (PatrolPathGameObject.Value == null)
+                //if(PatrolPathGameObject.Value)
+                if (PatrolPathGameObject == null)
                 {
                     Finish();
                     return;
@@ -35,7 +37,6 @@ namespace GGJ_2018.PlayMaker.NavMesh2D
                 _path = PatrolPathGameObject.Value.GetComponent<PatrolPath>();
             }
 
-            base.OnEnter();
         }
 
         public override void OnUpdate()
