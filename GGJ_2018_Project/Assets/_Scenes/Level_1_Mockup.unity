@@ -2596,11 +2596,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4984034594543820, guid: d377d66b3ac1dad489b3a8c1d758e255, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -2.27
+      value: -5.31
       objectReference: {fileID: 0}
     - target: {fileID: 4984034594543820, guid: d377d66b3ac1dad489b3a8c1d758e255, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.43
+      value: -1.53
       objectReference: {fileID: 0}
     - target: {fileID: 4984034594543820, guid: d377d66b3ac1dad489b3a8c1d758e255, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2625,6 +2625,40 @@ Prefab:
     - target: {fileID: 4984034594543820, guid: d377d66b3ac1dad489b3a8c1d758e255, type: 2}
       propertyPath: m_RootOrder
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4872879270495748, guid: d377d66b3ac1dad489b3a8c1d758e255, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 198939332293671496, guid: d377d66b3ac1dad489b3a8c1d758e255,
+        type: 2}
+      propertyPath: randomSeed
+      value: 883340796
+      objectReference: {fileID: 0}
+    - target: {fileID: 198939332293671496, guid: d377d66b3ac1dad489b3a8c1d758e255,
+        type: 2}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 198939332293671496, guid: d377d66b3ac1dad489b3a8c1d758e255,
+        type: 2}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 198939332293671496, guid: d377d66b3ac1dad489b3a8c1d758e255,
+        type: 2}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 198939332293671496, guid: d377d66b3ac1dad489b3a8c1d758e255,
+        type: 2}
+      propertyPath: InitialModule.startSpeed.minMaxState
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 198939332293671496, guid: d377d66b3ac1dad489b3a8c1d758e255,
+        type: 2}
+      propertyPath: InitialModule.startSpeed.minScalar
+      value: 0.25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d377d66b3ac1dad489b3a8c1d758e255, type: 2}
