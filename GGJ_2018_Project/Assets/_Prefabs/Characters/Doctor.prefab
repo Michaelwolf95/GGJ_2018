@@ -296,7 +296,7 @@ MonoBehaviour:
   acceleration: 8
   stoppingDistance: 1
   autoBraking: 1
-  radius: 0.35
+  radius: 0.4
   quality: 4
   priority: 50
   autoRepath: 1
