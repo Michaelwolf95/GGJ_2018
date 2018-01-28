@@ -24,7 +24,7 @@ public class SpriteDepth : MonoBehaviour
     //}
 
     void Update() {
-        Debug.DrawLine(this.transform.position, _sr.bounds.min, Color.red);
+        //Debug.DrawLine(this.transform.position, _sr.bounds.min, Color.red);
         if (_sr) {
             float yPos = _sr.bounds.min.y;
             if (yPos <= -100f) {

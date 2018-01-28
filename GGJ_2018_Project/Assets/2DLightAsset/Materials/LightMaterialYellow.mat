@@ -25,5 +25,5 @@ Material:
     m_Floats:
     - _InvFade: 1
     m_Colors:
-    - _Color: {r: 0.77677476, g: 1, b: 0.47794116, a: 1}
+    - _Color: {r: 0, g: 1, b: 0, a: 1}
     - _TintColor: {r: 0.8050233, g: 0.9852941, b: 0.39121974, a: 1}
