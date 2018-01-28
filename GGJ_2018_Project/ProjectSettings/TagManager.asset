@@ -38,6 +38,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 2184636443
+    locked: 0
+  - name: Aura
+    uniqueID: 3504078125
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
