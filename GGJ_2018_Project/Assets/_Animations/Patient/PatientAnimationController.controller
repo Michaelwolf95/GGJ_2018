@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: DoctorAnimationController
+  m_Name: PatientAnimationController
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: x
@@ -41,7 +41,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 375c14c2e9d02af4aa5fd1806039c64a, type: 2}
+    m_Motion: {fileID: 7400000, guid: 267b7e14e0ae70b49bb811a32b11bc32, type: 2}
     m_Threshold: 0
     m_Position: {x: 1, y: 0}
     m_TimeScale: 1
@@ -49,24 +49,24 @@ BlendTree:
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 1260b3ae1a2af924080b01aa81086ef0, type: 2}
-    m_Threshold: 0.25
+    m_Motion: {fileID: 7400000, guid: 4d01489cd5a8d4a4fac9db618652abea, type: 2}
+    m_Threshold: 0.20000002
     m_Position: {x: -1, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 0a78255634afd984aac0aeea642341f2, type: 2}
-    m_Threshold: 0.5
+    m_Motion: {fileID: 7400000, guid: de76b3f5204e1d74cbeddf7dbf1aff2c, type: 2}
+    m_Threshold: 0.40000004
     m_Position: {x: 0.1, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 0a78255634afd984aac0aeea642341f2, type: 2}
-    m_Threshold: 0.75
+    m_Motion: {fileID: 7400000, guid: 9b4ab335e78765743bb9be1656dbc39d, type: 2}
+    m_Threshold: 0.6
     m_Position: {x: -0.1, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -75,7 +75,7 @@ BlendTree:
   m_BlendParameter: x
   m_BlendParameterY: y
   m_MinThreshold: 0
-  m_MaxThreshold: 0.75
+  m_MaxThreshold: 0.6
   m_UseAutomaticThresholds: 1
   m_NormalizedBlendValues: 0
   m_BlendType: 3
@@ -106,7 +106,7 @@ AnimatorState:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Attack
+  m_Name: Vomit
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -120,7 +120,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 07dbf400f9deab24fa6fbf1bc69af83f, type: 2}
+  m_Motion: {fileID: 0}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
