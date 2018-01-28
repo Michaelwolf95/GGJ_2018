@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/_Scenes/Final Levels/Level_2_Final.unity
     guid: 6a3e309c5ed99b044b2bf04aeed2f25e
   - enabled: 1
-    path: Assets/_Scenes/Final Levels/Level_2.5_Final.unity
+    path: Assets/_Scenes/Final Levels/Level_3_Final.unity
     guid: 1a3139a83bb743649921f3326fac6df3
   - enabled: 1
     path: Assets/_Scenes/Final Levels/Level_4_Final.unity
@@ -26,3 +26,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Final Levels/Level_5_Final.unity
     guid: d16217dabf0928e4ca85f83418e36b95
+  - enabled: 1
+    path: Assets/_Scenes/Final Levels/Main_Menu_Final 1.unity
+    guid: 5d851cc9490d2cd4b87c1ccb368a24ff
