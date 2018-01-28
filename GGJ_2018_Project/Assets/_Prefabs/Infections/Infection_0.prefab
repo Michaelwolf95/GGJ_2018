@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 198639998657080602}
   - component: {fileID: 199080637281442234}
   m_Layer: 0
-  m_Name: Infection_Red
+  m_Name: Infection_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,6 +81,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SubscribableObject: {fileID: 114228784030170508}
+  NewColor: {r: 0.25935337, g: 0.8602941, b: 0.2883642, a: 1}
 --- !u!198 &198639998657080602
 ParticleSystem:
   m_ObjectHideFlags: 1

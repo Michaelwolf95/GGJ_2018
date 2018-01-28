@@ -593,6 +593,7 @@ GameObject:
   - component: {fileID: 712127869}
   - component: {fileID: 712127867}
   - component: {fileID: 712127868}
+  - component: {fileID: 712127872}
   m_Layer: 0
   m_Name: Animator
   m_TagString: Untagged
@@ -715,6 +716,17 @@ Transform:
   m_Father: {fileID: 799984072}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &712127872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 712127866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edb7529e266471641ae26c873022c308, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &799984067
 GameObject:
   m_ObjectHideFlags: 0
@@ -728,6 +740,7 @@ GameObject:
   - component: {fileID: 799984070}
   - component: {fileID: 799984069}
   - component: {fileID: 799984068}
+  - component: {fileID: 799984073}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -749,6 +762,7 @@ MonoBehaviour:
   m_MediumImmunities: 
   Infections:
   - {fileID: 940020776}
+  m_InitInfectionsAtStart: 0
 --- !u!50 &799984069
 Rigidbody2D:
   serializedVersion: 4
@@ -812,6 +826,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &799984073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 799984067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e3771f6681ac8e4b9cda6db58470d7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InfectionPrefab: {fileID: 1951572867240502, guid: a4b939ac3398119458d3ead0aec3a543,
+    type: 2}
+  TransmissionMedium: 1
 --- !u!1 &936544430
 GameObject:
   m_ObjectHideFlags: 0
@@ -1118,7 +1146,7 @@ GameObject:
   - component: {fileID: 1267905491}
   - component: {fileID: 1267905492}
   m_Layer: 9
-  m_Name: Infectee
+  m_Name: Patient
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1157,6 +1185,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MediumImmunities: 
   Infections: []
+  m_InitInfectionsAtStart: 1
 --- !u!4 &1267905490
 Transform:
   m_ObjectHideFlags: 0
@@ -1214,7 +1243,7 @@ MonoBehaviour:
   acceleration: 8
   stoppingDistance: 1.5
   autoBraking: 1
-  radius: 0.5
+  radius: 0.4
   quality: 4
   priority: 50
   autoRepath: 1
@@ -2027,8 +2056,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1913845413}
   - component: {fileID: 1913845415}
+  - component: {fileID: 1913845414}
   m_Layer: 9
-  m_Name: Infectee_Character
+  m_Name: Patient_Character
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2047,6 +2077,17 @@ Transform:
   m_Father: {fileID: 1267905490}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1913845414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1913845412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edb7529e266471641ae26c873022c308, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &1913845415
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2302,6 +2343,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4195220939010346, guid: a4b939ac3398119458d3ead0aec3a543, type: 2}
       propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114947855243911298, guid: a4b939ac3398119458d3ead0aec3a543,
+        type: 2}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
