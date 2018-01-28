@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 114560456805958166}
   m_Layer: 9
   m_Name: Doctor
-  m_TagString: Untagged
+  m_TagString: Doctor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -284,7 +284,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1947391842973250}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.74, y: 1.84, z: 0}
+  m_LocalPosition: {x: 11.1, y: 0.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4147507940315994}
@@ -1088,7 +1088,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -1144,10 +1144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 490f117dad6d7524e9390597a2de7fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PathNodes:
-  - {fileID: 4345867396157842}
-  - {fileID: 4352812595968520}
-  - {fileID: 4640992810753518}
+  PathNodes: []
   CurrentNodeIndex: 0
   IsCircular: 0
 --- !u!212 &212422280618907670
