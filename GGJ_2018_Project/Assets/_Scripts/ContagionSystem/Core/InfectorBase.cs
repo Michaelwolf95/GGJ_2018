@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace GGJ_2018.ContagionSystem
 {
@@ -6,6 +7,8 @@ namespace GGJ_2018.ContagionSystem
     {
         public GameObject InfectionPrefab;
         public TransmissionMediumType TransmissionMedium;
+
+        public Action OnInfectSuccess = delegate {  };
 
         public void TryInfect(GameObject target)
         {
@@ -15,6 +18,8 @@ namespace GGJ_2018.ContagionSystem
             {
                 //Debug.Log("Infecting!");
                 inf.Infect(this, new InfectionEventArgs(InfectionPrefab, TransmissionMedium));
+
+                OnInfectSuccess();
             }
         }
     }
