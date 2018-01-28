@@ -8,6 +8,8 @@ namespace GGJ_2018_AP
     public class Game_Manager : MonoBehaviour
     {
         public GameObject pausePanel;
+        public GameObject optionsPanel; 
+
         private bool gamePaused = false;
         private void Update()
         {
@@ -36,6 +38,16 @@ namespace GGJ_2018_AP
             pauseMenu.SetActive(false);
         }
 
+        public void EnterOptions()
+        {
+            optionsPanel.SetActive(true);
+        }
+
+        public void ExitOptions()
+        {
+            optionsPanel.SetActive(false);
+        }
+
         public void StopGameTime()
         {
             Time.timeScale = 0f;
@@ -56,6 +68,7 @@ namespace GGJ_2018_AP
             Debug.Log("Quit");
             Application.Quit();
         }
+
 
         private void ScanForKeyStroke()
         {
