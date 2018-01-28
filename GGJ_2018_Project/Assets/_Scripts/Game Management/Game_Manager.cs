@@ -80,6 +80,12 @@ namespace GGJ_2018
             SceneManager.LoadScene(nextSceneLevel, LoadSceneMode.Single);
         }
 
+        public void ReloadScene()
+        {
+            ResumeGameTime();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
         public void QuitGame()
         {
             Debug.Log("Quit");
