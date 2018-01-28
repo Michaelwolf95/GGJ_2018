@@ -1,9 +1,14 @@
 fileFormatVersion: 2
 guid: 45327a7ef154bdb43a97ed18720acd61
-timeCreated: 1517175335
+timeCreated: 1517176550
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: DoctorAttackL_0
+    21300002: DoctorAttackL_1
+    21300004: DoctorAttackL_2
+    21300006: DoctorAttackL_3
+    21300008: DoctorAttackL_4
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -40,13 +45,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 1024
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -66,9 +71,61 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: DoctorAttackL_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1745
+        width: 678
+        height: 967
+      alignment: 9
+      pivot: {x: 0.69607556, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DoctorAttackL_2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 869
+        width: 755
+        height: 866
+      alignment: 9
+      pivot: {x: 0.7622425, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DoctorAttackL_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 717
+        height: 862
+      alignment: 9
+      pivot: {x: 0.780149, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 
