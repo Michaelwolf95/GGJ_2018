@@ -17,7 +17,8 @@ namespace GGJ_2018 {
         }
 
         public void OpenDoor() {
-            this.gameObject.SetActive(false);
+			GetComponent<Animator>().SetBool("open", true);
+            //this.gameObject.SetActive(false);
         }
     }
 }
