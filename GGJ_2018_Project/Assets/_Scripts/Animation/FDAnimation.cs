@@ -44,7 +44,6 @@ public class FDAnimation : MonoBehaviour {
 			save = moveDirection;
 		}
 
-		print("often");
 		anim.SetFloat("x", moveDirection.x);
 		anim.SetFloat("y", moveDirection.y);
 	}
