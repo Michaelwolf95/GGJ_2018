@@ -40,6 +40,8 @@ GameObject:
   - component: {fileID: 223051640480957220}
   - component: {fileID: 114463019788655062}
   - component: {fileID: 114059789598913816}
+  - component: {fileID: 225875409424448472}
+  - component: {fileID: 114560761660876264}
   m_Layer: 5
   m_Name: Level Display Canvas
   m_TagString: Untagged
@@ -101,7 +103,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 23
+    m_FontSize: 41
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -125,7 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.20588237, g: 0.20588237, b: 0.20588237, a: 0.622}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -161,6 +163,22 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &114560761660876264
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1371240561188636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddc922c2cc599f94480140aa36e7d00d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _canvasGroup: {fileID: 0}
+  _delayStartTime: 1
+  _fadeInTime: 0.5
+  _holdTime: 2
+  _fadeOutTime: 0.5
 --- !u!114 &114824843073755840
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -173,7 +191,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AspectMode: 0
-  m_AspectRatio: 10.353466
+  m_AspectRatio: 5.7830424
 --- !u!222 &222574854525572160
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -239,11 +257,11 @@ RectTransform:
   m_Father: {fileID: 224160539129510386}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 582.9, y: 56.299988}
-  m_Pivot: {x: 0, y: 0}
+  m_SizeDelta: {x: 695.7, y: 120.3}
+  m_Pivot: {x: 0, y: 1}
 --- !u!224 &224888537916085406
 RectTransform:
   m_ObjectHideFlags: 1
@@ -262,3 +280,14 @@ RectTransform:
   m_AnchoredPosition: {x: 7.200012, y: 0}
   m_SizeDelta: {x: -14.4, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &225875409424448472
+CanvasGroup:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1371240561188636}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
