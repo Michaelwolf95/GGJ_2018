@@ -28,7 +28,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1304850431577684
 GameObject:
   m_ObjectHideFlags: 1
@@ -325,7 +325,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 1947391842973250}
   m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 0
+  m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
@@ -737,8 +737,8 @@ MonoBehaviour:
         - 
         actionEnabled: 010101
         actionIsOpen: 010101
-        actionStartIndex: 000000000500000009000000
-        actionHashCodes: 062b1c0336f094001bcdca04
+        actionStartIndex: 00000000060000000a000000
+        actionHashCodes: 8d3c7e0536f094001bcdca04
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -817,14 +817,15 @@ MonoBehaviour:
         - 
         - OnReachTarget
         - 
-        byteData: 0000000000000000000101
+        byteData: 010000000000000000000101
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 130000001400000001000000020000000200000014000000130000000f000000010000000f0000000f0000000f00000017000000170000001700000001000000
+        paramDataType: 13000000010000001400000001000000020000000200000014000000130000000f000000010000000f0000000f0000000f00000017000000170000001700000001000000
         paramName:
         - Target
+        - EveryFrame
         - agentGameObject
         - OverrideAgentVariables
         - AgentSpeed
@@ -840,8 +841,8 @@ MonoBehaviour:
         - lessThan
         - greaterThan
         - everyFrame
-        paramDataPos: 0000000000000000000000000100000005000000010000000100000000000000090000000100000002000000030000000000000001000000020000000a000000
-        paramByteDataSize: 00000000000000000100000004000000040000000000000000000000000000000100000000000000000000000000000000000000000000000000000001000000
+        paramDataPos: 0000000000000000000000000100000002000000060000000100000001000000000000000a0000000100000002000000030000000000000001000000020000000b000000
+        paramByteDataSize: 0000000001000000000000000100000004000000040000000000000000000000000000000100000000000000000000000000000000000000000000000000000001000000
     - name: Attack
       description: 
       colorIndex: 0

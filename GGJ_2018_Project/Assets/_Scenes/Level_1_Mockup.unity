@@ -246,6 +246,10 @@ Prefab:
       propertyPath: m_UseFullKinematicContacts
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1299409394426730, guid: 7e3242aad8298114cab98f843f208d17, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7e3242aad8298114cab98f843f208d17, type: 2}
   m_IsPrefabParent: 0
@@ -5358,6 +5362,10 @@ Prefab:
     - target: {fileID: 1951572867240502, guid: a4b939ac3398119458d3ead0aec3a543, type: 2}
       propertyPath: m_Name
       value: Infection_0 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1951572867240502, guid: a4b939ac3398119458d3ead0aec3a543, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a4b939ac3398119458d3ead0aec3a543, type: 2}
