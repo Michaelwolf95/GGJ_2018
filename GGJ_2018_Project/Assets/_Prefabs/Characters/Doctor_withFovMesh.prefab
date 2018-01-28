@@ -618,8 +618,8 @@ MonoBehaviour:
         - 
         actionEnabled: 0101
         actionIsOpen: 0101
-        actionStartIndex: 0000000004000000
-        actionHashCodes: ad4dcd018d3c7e05
+        actionStartIndex: 0000000005000000
+        actionHashCodes: bbf3f4024fc03800
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 0
@@ -628,6 +628,12 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: {fileID: 1368116949186754}
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: {fileID: 0}
         - useVariable: 1
           name: Target
           tooltip: 
@@ -660,7 +666,13 @@ MonoBehaviour:
         fsmVarParams: []
         fsmArrayParams: []
         fsmEnumParams: []
-        fsmFloatParams: []
+        fsmFloatParams:
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 0.5
         fsmIntParams: []
         fsmBoolParams: []
         fsmVector2Params: []
@@ -675,20 +687,22 @@ MonoBehaviour:
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 13000000130000001700000001000000130000000100000014000000010000000200000002000000
+        paramDataType: 1300000013000000130000001700000001000000130000000f0000000100000014000000010000000200000002000000
         paramName:
         - gameObject
+        - CurrentTarget
         - ResultTarget
         - DetectEvent
         - everyFrame
         - PatrolPathGameObject
+        - WaitTime
         - UsePath
         - agentGameObject
         - OverrideAgentVariables
         - AgentSpeed
         - AgentAcceleration
-        paramDataPos: 00000000010000000000000000000000020000000100000000000000020000000300000007000000
-        paramByteDataSize: 00000000000000000000000001000000000000000100000000000000010000000400000004000000
+        paramDataPos: 000000000100000002000000000000000000000003000000000000000100000000000000020000000300000007000000
+        paramByteDataSize: 000000000000000000000000000000000100000000000000000000000100000000000000010000000400000004000000
     - name: Chase
       description: 
       colorIndex: 0
@@ -721,8 +735,8 @@ MonoBehaviour:
         - 
         actionEnabled: 010101
         actionIsOpen: 010101
-        actionStartIndex: 000000000500000009000000
-        actionHashCodes: 062b1c0336f094001bcdca04
+        actionStartIndex: 00000000060000000a000000
+        actionHashCodes: 8d3c7e0536f094001bcdca04
         unityObjectParams: []
         fsmGameObjectParams:
         - useVariable: 1
@@ -801,14 +815,15 @@ MonoBehaviour:
         - 
         - OnReachTarget
         - 
-        byteData: 0000000000000000000101
+        byteData: 010000000000000000000101
         arrayParamSizes: 
         arrayParamTypes: []
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 130000001400000001000000020000000200000014000000130000000f000000010000000f0000000f0000000f00000017000000170000001700000001000000
+        paramDataType: 13000000010000001400000001000000020000000200000014000000130000000f000000010000000f0000000f0000000f00000017000000170000001700000001000000
         paramName:
         - Target
+        - EveryFrame
         - agentGameObject
         - OverrideAgentVariables
         - AgentSpeed
@@ -824,8 +839,8 @@ MonoBehaviour:
         - lessThan
         - greaterThan
         - everyFrame
-        paramDataPos: 0000000000000000000000000100000005000000010000000100000000000000090000000100000002000000030000000000000001000000020000000a000000
-        paramByteDataSize: 00000000000000000100000004000000040000000000000000000000000000000100000000000000000000000000000000000000000000000000000001000000
+        paramDataPos: 0000000000000000000000000100000002000000060000000100000001000000000000000a0000000100000002000000030000000000000001000000020000000b000000
+        paramByteDataSize: 0000000001000000000000000100000004000000040000000000000000000000000000000100000000000000000000000000000000000000000000000000000001000000
     - name: Patrol 2
       description: 
       colorIndex: 0
@@ -994,7 +1009,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 1
+    preprocessed: 0
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0

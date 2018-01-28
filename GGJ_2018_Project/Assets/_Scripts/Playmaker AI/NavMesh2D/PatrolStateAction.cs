@@ -61,7 +61,7 @@ namespace GGJ_2018.PlayMaker.NavMesh2D
         protected void FindNextPathPosition()
         {
             if(_path.PathNodes.Length <=1) return;
-            Debug.Log("Next Position");
+            //Debug.Log("Next Position");
             Vector3 newPos = _path.GetNextNode().position;
             navMeshAgent.SetDestination(newPos);
             
