@@ -1215,7 +1215,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You Win!
+  m_Text: Level Complete!
 --- !u!114 &114447927902991302
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1495,7 +1495,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: You Lose
+  m_Text: You Were Caught!
 --- !u!114 &114630106759471534
 MonoBehaviour:
   m_ObjectHideFlags: 1
