@@ -51,14 +51,14 @@ namespace GGJ_2018.PlayMaker
             
 			if (_fov !=null)
 			{
-			    Debug.Log("Watching");
+			    //Debug.Log("Watching");
                 var results = _fov.GetVisibleTargets();
 			    foreach (var result in results)
 			    {
-                    Debug.Log("Checking " + result.gameObject.name);
+                    //Debug.Log("Checking " + result.gameObject.name);
 			        if (CheckCondition(result.gameObject))
 			        {
-			            Debug.Log("Detected!");
+			            //Debug.Log("Detected!");
                         ResultTarget.Value = result.gameObject;
                         Fsm.Event(DetectEvent);
                         Finish();
