@@ -49,10 +49,10 @@ namespace GGJ_2018.PlayMaker
 
 		protected virtual void DoWatch()
 		{
-            
-			if (_fov !=null)
+		    //Debug.Log("Watching 1...");
+            if (_fov !=null)
 			{
-			    //Debug.Log("Watching");
+			    //Debug.Log("Watching 2 ...");
                 var results = _fov.GetVisibleTargets();
 			    foreach (var result in results)
 			    {
@@ -61,9 +61,10 @@ namespace GGJ_2018.PlayMaker
 			        {
 			            if (CurrentTarget.Value != null)
 			            {
-			                if (!CompareTargets(CurrentTarget.Value, result.gameObject))
+			                //Debug.Log("Current Target " + CurrentTarget.Value);
+                            if (!CompareTargets(CurrentTarget.Value, result.gameObject))
 			                {
-                                Debug.Log("Object ignored.");
+                                //Debug.Log("Object ignored.");
                                 continue;
 			                }
 			            }

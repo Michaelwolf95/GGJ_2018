@@ -41,7 +41,7 @@ public class FieldOfView : MonoBehaviour
         List<Transform> visTargets = new List<Transform>();
         visTargets.Clear();
         Collider2D[] targetsInViewRadius = Physics2D.OverlapCircleAll(transform.position, viewRadius, targetMask);
-
+        //Debug.Log("Found Count: " + targetsInViewRadius.Length);
         for (int i = 0; i < targetsInViewRadius.Length; i++)
         {
             Transform target = targetsInViewRadius[i].attachedRigidbody ? targetsInViewRadius[i].attachedRigidbody.transform : targetsInViewRadius[i].transform;
@@ -49,15 +49,20 @@ public class FieldOfView : MonoBehaviour
 
             if (Vector2.Angle(transform.up, dirToTarget) < viewAngle / 2)
             {
+                //Debug.Log("Found in Angle!");
                 float dstToTarget = Vector2.Distance(transform.position, target.position);
 
                 // Check for obstacles between objects in view radius
                 RaycastHit2D hit2d = Physics2D.Raycast(transform.position, dirToTarget, dstToTarget, obstacleMask);
                 if (hit2d.collider == null)
                 {
-                    ///Debug.Log("Hit..." + target.name);
+                    //Debug.Log("Detected " + target.name);
                     visTargets.Add(target);
                 }
+                //else
+                //{
+                //    Debug.Log("Hit " + hit2d.collider.name);
+                //}
             }
         }
 
