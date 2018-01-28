@@ -203,7 +203,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1927183527512954}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.6645124, y: 0.5936589, z: 0}
+  m_LocalPosition: {x: -0.17, y: 1.55, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4005419598447302}
@@ -274,7 +274,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1927183527512954}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 1
   m_UseAutoMass: 0
@@ -325,7 +325,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.012177885, y: 0.17357612}
-  m_Size: {x: 0.68328154, y: 1.3216968}
+  m_Size: {x: 0.81, y: 1.3216968}
   m_Direction: 0
 --- !u!114 &114081310908353090
 MonoBehaviour:
@@ -683,6 +683,7 @@ MonoBehaviour:
   edgeResolveIterations: 4
   edgeDstThreshold: 0.5
   maskCutawayDst: 0.1
+  showFov: 1
   viewMeshFilter: {fileID: 33054799548355658}
 --- !u!114 &114995690545469432
 MonoBehaviour:
