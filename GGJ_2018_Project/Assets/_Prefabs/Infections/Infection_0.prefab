@@ -138,7 +138,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 1.0245781}
-  m_Size: {x: 1.6838846, y: 2.360218}
+  m_Size: {x: 2.26, y: 2.360218}
   m_Direction: 0
 --- !u!114 &114039926102548182
 MonoBehaviour:
@@ -251,7 +251,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -527438511
+  randomSeed: -1448620775
   InitialModule:
     serializedVersion: 3
     enabled: 1
