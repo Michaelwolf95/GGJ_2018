@@ -651,7 +651,9 @@ MonoBehaviour:
         actionStartIndex: 0000000005000000
         actionHashCodes: c34b41057ecde804
         unityObjectParams:
-        - {fileID: 8300000, guid: 091ac440805aa5f40ab19ceac4d7e207, type: 3}
+        - {fileID: 8300000, guid: 650ccc80950a00c4087f31988a3be2c6, type: 3}
+        - {fileID: 8300000, guid: 6ce0f9befb34ef348825fd43a26bff07, type: 3}
+        - {fileID: 8300000, guid: 183e2162cb77aac4d8fb2ef26f1b4095, type: 3}
         fsmGameObjectParams: []
         fsmOwnerDefaultParams:
         - ownerOption: 1
@@ -706,6 +708,18 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
+        - useVariable: 0
+          name: 
+          tooltip: 
+          showInInspector: 0
+          networkSync: 0
+          value: 1
         fsmIntParams:
         - useVariable: 1
           name: 
@@ -727,13 +741,13 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams: []
         byteData: 00
-        arrayParamSizes: 0100000001000000
+        arrayParamSizes: 0300000003000000
         arrayParamTypes:
         - UnityEngine.AudioClip
         - HutongGames.PlayMaker.FsmFloat
         customTypeSizes: 
         customTypeNames: []
-        paramDataType: 1400000012000000100000000f00000001000000140000001c0000000c000000050000000c0000000f0000000f000000
+        paramDataType: 1400000012000000100000000f00000001000000140000001c0000000c0000000500000005000000050000000c0000000f0000000f0000000f0000000f000000
         paramName:
         - gameObject
         - stateName
@@ -744,11 +758,15 @@ MonoBehaviour:
         - position
         - audioClips
         - 
+        - 
+        - 
         - weights
         - 
+        - 
+        - 
         - volume
-        paramDataPos: 000000000000000000000000000000000000000001000000000000000000000000000000010000000100000002000000
-        paramByteDataSize: 000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000
+        paramDataPos: 00000000000000000000000000000000000000000100000000000000000000000000000001000000020000000100000001000000020000000300000004000000
+        paramByteDataSize: 00000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
     - name: Reset
       description: 
       colorIndex: 0

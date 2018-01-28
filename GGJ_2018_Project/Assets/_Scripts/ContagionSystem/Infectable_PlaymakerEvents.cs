@@ -32,6 +32,7 @@ namespace GGJ_2018.ContagionSystem
         {
             if (m_PlayMaker)
             {
+                Debug.Log("OnGetSick!");
                 // Make sure that this is the first infection.
                 if (SubscribableObject.InfectionDict.Count == 1)
                 {
@@ -44,7 +45,7 @@ namespace GGJ_2018.ContagionSystem
         {
             if (m_PlayMaker)
             {
-                m_PlayMaker.SendEvent(OnInfectEventName);
+                m_PlayMaker.SendEvent(OnFullyCuredEventName);
             }
         }
     }
