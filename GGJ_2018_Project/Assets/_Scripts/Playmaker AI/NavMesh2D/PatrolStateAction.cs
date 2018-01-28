@@ -1,4 +1,5 @@
-﻿using MichaelWolfGames;
+﻿using HutongGames.PlayMaker;
+using MichaelWolfGames;
 using UnityEngine;
 using WellTold.AI.Playmaker.Pathing;
 
@@ -6,20 +7,32 @@ namespace GGJ_2018.PlayMaker.NavMesh2D
 {
     public class PatrolStateAction : NavMeshAgent2DStateAction
     {
-        public PatrolPath Path;
+        public FsmGameObject PatrolPathGameObject;
+
+        private PatrolPath _path;
         public bool UsePath = true;
 
         private Timer _waitTimer = new Timer(0.5f);
 
         public override void OnEnter()
         {
+            if (UsePath)
+            {
+                if (PatrolPathGameObject.Value == null)
+                {
+                    Finish();
+                    return;
+                }
+
+                _path = PatrolPathGameObject.Value.GetComponent<PatrolPath>();
+            }
+
             base.OnEnter();
-            //reachedDestinationThreshold = 0.01f;
         }
 
         public override void OnUpdate()
         {
-            if (Path && UsePath)
+            if (_path && UsePath)
             {
                 FollowPatrol();
             }
@@ -46,7 +59,7 @@ namespace GGJ_2018.PlayMaker.NavMesh2D
         protected void FindNextPathPosition()
         {
             Debug.Log("Next Position");
-            Vector3 newPos = Path.GetNextNode().position;
+            Vector3 newPos = _path.GetNextNode().position;
             navMeshAgent.SetDestination(newPos);
             
         }
