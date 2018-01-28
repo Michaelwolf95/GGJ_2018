@@ -80,8 +80,9 @@ namespace GGJ_2018.ContagionSystem
                         inf.Infect(this);
                         this.Infections.Add(inf);
                         this.InfectionDict.Add(inf.InfectionName, inf);
+                        OnInfect(sender, args);
+                        return true;
                     }
-                    return true;
                 }
             }
             return false;

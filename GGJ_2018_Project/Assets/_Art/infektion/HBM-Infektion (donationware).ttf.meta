@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: e5ad52f5d9b2b0f4c805a8ac1b3f1818
+timeCreated: 1517145137
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Infektion
+  fontNames:
+  - Infektion
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 8016b52c426baf94d92ed4364dd4b1f8, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

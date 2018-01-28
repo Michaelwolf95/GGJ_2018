@@ -50,6 +50,7 @@ namespace GGJ_2018
 
         public void UnPauseGame(GameObject pauseMenu)
         {
+            gamePaused = false;
             pauseMenu.SetActive(false);
         }
 
@@ -77,6 +78,12 @@ namespace GGJ_2018
         {
             ResumeGameTime();
             SceneManager.LoadScene(nextSceneLevel, LoadSceneMode.Single);
+        }
+
+        public void ReloadScene()
+        {
+            ResumeGameTime();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
         public void QuitGame()
