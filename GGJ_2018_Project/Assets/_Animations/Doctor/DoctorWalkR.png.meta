@@ -1,14 +1,14 @@
 fileFormatVersion: 2
-guid: 888005459e9a88a428aaca01df12077f
-timeCreated: 1517126044
+guid: dca9d22384ac4884c9afd6c64b35881f
+timeCreated: 1517148740
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: DoctorWalkL_0
-    21300002: DoctorWalkL_1
-    21300004: DoctorWalkL_2
-    21300006: DoctorWalkL_3
-    21300008: DoctorWalkL_4
+    21300000: DoctorWalkR_0
+    21300002: DoctorWalkR_1
+    21300004: DoctorWalkR_2
+    21300006: DoctorWalkR_3
+    21300008: DoctorWalkR_4
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -85,10 +85,38 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DoctorWalkL_0
+      name: DoctorWalkR_0
       rect:
         serializedVersion: 2
         x: 1
+        y: 3
+        width: 378
+        height: 935
+      alignment: 9
+      pivot: {x: 0.66, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DoctorWalkR_1
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 21
+        width: 464
+        height: 917
+      alignment: 9
+      pivot: {x: 0.545, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DoctorWalkR_2
+      rect:
+        serializedVersion: 2
+        x: 847
         y: 1
         width: 316
         height: 937
@@ -99,41 +127,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: DoctorWalkL_1
+      name: DoctorWalkR_3
       rect:
         serializedVersion: 2
-        x: 319
+        x: 1165
         y: 7
         width: 474
         height: 931
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: DoctorWalkL_2
-      rect:
-        serializedVersion: 2
-        x: 795
-        y: 3
-        width: 378
-        height: 935
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: DoctorWalkL_3
-      rect:
-        serializedVersion: 2
-        x: 1175
-        y: 21
-        width: 464
-        height: 917
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
