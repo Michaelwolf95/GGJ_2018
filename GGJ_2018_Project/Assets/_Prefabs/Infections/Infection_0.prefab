@@ -221,7 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SubscribableObject: {fileID: 114228784030170508}
-  NewColor: {r: 0.25935337, g: 0.8602941, b: 0.2883642, a: 1}
+  NewColor: {r: 0.85490197, g: 1, b: 0.85882354, a: 1}
 --- !u!198 &198266240278772052
 ParticleSystem:
   m_ObjectHideFlags: 1
