@@ -316,8 +316,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.0310588}
-  m_Size: {x: 1.301461, y: 2.0621176}
+  m_Offset: {x: 0.07266182, y: 1.0128937}
+  m_Size: {x: 2.1416245, y: 2.8735027}
   m_Direction: 0
 --- !u!70 &70699651347430146
 CapsuleCollider2D:
@@ -457,7 +457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 114859348882289580}
-  maxVelocity: 5
+  maxVelocity: 5.5
 --- !u!114 &114305528008935228
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -676,7 +676,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -696662580
+  randomSeed: 2044947762
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -4037,7 +4037,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -614848888
+  randomSeed: -1058005167
   InitialModule:
     serializedVersion: 3
     enabled: 1
